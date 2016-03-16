@@ -1,0 +1,2248 @@
+2016-03-16 12:06:18 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: /Applications/MAMP/htdocs/dd/service/stream/vendor/bower/jquery/dist' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/AssetManager.php:452
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/AssetBundle.php(179): yii\web\AssetManager->publish('/Applications/M...', Array)
+#1 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/AssetManager.php(237): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/View.php(284): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/View.php(289): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/View.php(289): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/AssetBundle.php(123): yii\web\View->registerAssetBundle('frontend\\assets...')
+#7 /Applications/MAMP/htdocs/dd/service/stream/frontend/views/layouts/main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/View.php(325): require('/Applications/M...')
+#9 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Controller.php(392): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\SiteController))
+#11 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\Controller->renderContent('<div class="sit...')
+#12 /Applications/MAMP/htdocs/dd/service/stream/frontend/controllers/SiteController.php(75): yii\base\Controller->render('index')
+#13 [internal function]: frontend\controllers\SiteController->actionIndex()
+#14 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#17 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#18 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#20 {main}
+2016-03-16 12:06:18 [::1][-][-][info][application] $_COOKIE = [
+    'langCookie' => 'en'
+    '_identity' => '3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    'SQLiteManager_currentLangue' => '4'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/dd/service/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'langCookie=en; _identity=3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; SQLiteManager_currentLangue=4'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.6.10 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/dd/service/stream/index.php'
+    'REMOTE_PORT' => '59541'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dd/service/stream/'
+    'SCRIPT_NAME' => '/dd/service/stream/index.php'
+    'PHP_SELF' => '/dd/service/stream/index.php'
+    'REQUEST_TIME_FLOAT' => 1458126378.43
+    'REQUEST_TIME' => 1458126378
+    'argv' => []
+    'argc' => 0
+]
+2016-03-16 12:06:46 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: /Applications/MAMP/htdocs/dd/service/stream/vendor/bower/jquery/dist' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/AssetManager.php:452
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/AssetBundle.php(179): yii\web\AssetManager->publish('/Applications/M...', Array)
+#1 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/AssetManager.php(237): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/View.php(284): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/View.php(289): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/View.php(289): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/AssetBundle.php(123): yii\web\View->registerAssetBundle('frontend\\assets...')
+#7 /Applications/MAMP/htdocs/dd/service/stream/frontend/views/layouts/main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/View.php(325): require('/Applications/M...')
+#9 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Controller.php(392): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\SiteController))
+#11 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\Controller->renderContent('<div class="sit...')
+#12 /Applications/MAMP/htdocs/dd/service/stream/frontend/controllers/SiteController.php(75): yii\base\Controller->render('index')
+#13 [internal function]: frontend\controllers\SiteController->actionIndex()
+#14 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#17 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#18 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#20 {main}
+2016-03-16 12:06:46 [::1][-][-][info][application] $_COOKIE = [
+    'langCookie' => 'en'
+    '_identity' => '3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    'SQLiteManager_currentLangue' => '4'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/dd/service/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'langCookie=en; _identity=3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; SQLiteManager_currentLangue=4'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.6.10 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/dd/service/stream/index.php'
+    'REMOTE_PORT' => '59550'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dd/service/stream/'
+    'SCRIPT_NAME' => '/dd/service/stream/index.php'
+    'PHP_SELF' => '/dd/service/stream/index.php'
+    'REQUEST_TIME_FLOAT' => 1458126406.88
+    'REQUEST_TIME' => 1458126406
+    'argv' => []
+    'argc' => 0
+]
+2016-03-16 12:11:37 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: /Applications/MAMP/htdocs/dd/service/stream/vendor/bower/jquery/dist' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/AssetManager.php:452
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/AssetBundle.php(179): yii\web\AssetManager->publish('/Applications/M...', Array)
+#1 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/AssetManager.php(237): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/View.php(284): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/View.php(289): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/View.php(289): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/AssetBundle.php(123): yii\web\View->registerAssetBundle('frontend\\assets...')
+#7 /Applications/MAMP/htdocs/dd/service/stream/frontend/views/layouts/main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/View.php(325): require('/Applications/M...')
+#9 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Controller.php(392): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\SiteController))
+#11 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\Controller->renderContent('<div class="sit...')
+#12 /Applications/MAMP/htdocs/dd/service/stream/frontend/controllers/SiteController.php(75): yii\base\Controller->render('index')
+#13 [internal function]: frontend\controllers\SiteController->actionIndex()
+#14 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#17 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#18 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#20 {main}
+2016-03-16 12:11:37 [::1][-][-][info][application] $_COOKIE = [
+    'langCookie' => 'en'
+    '_identity' => '3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    'SQLiteManager_currentLangue' => '4'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/dd/service/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'langCookie=en; _identity=3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; SQLiteManager_currentLangue=4'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.6.10 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/dd/service/stream/index.php'
+    'REMOTE_PORT' => '59659'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dd/service/stream/'
+    'SCRIPT_NAME' => '/dd/service/stream/index.php'
+    'PHP_SELF' => '/dd/service/stream/index.php'
+    'REQUEST_TIME_FLOAT' => 1458126697.01
+    'REQUEST_TIME' => 1458126697
+    'argv' => []
+    'argc' => 0
+]
+2016-03-16 12:15:02 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: /Applications/MAMP/htdocs/dd/service/stream/vendor/bower/jquery/dist' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/AssetManager.php:452
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/AssetBundle.php(179): yii\web\AssetManager->publish('/Applications/M...', Array)
+#1 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/AssetManager.php(237): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/View.php(284): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/View.php(289): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/View.php(289): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/AssetBundle.php(123): yii\web\View->registerAssetBundle('frontend\\assets...')
+#7 /Applications/MAMP/htdocs/dd/service/stream/frontend/views/layouts/main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/View.php(325): require('/Applications/M...')
+#9 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Controller.php(392): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\SiteController))
+#11 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\Controller->renderContent('<div class="sit...')
+#12 /Applications/MAMP/htdocs/dd/service/stream/frontend/controllers/SiteController.php(75): yii\base\Controller->render('index')
+#13 [internal function]: frontend\controllers\SiteController->actionIndex()
+#14 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#17 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#18 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#20 {main}
+2016-03-16 12:15:02 [::1][-][-][info][application] $_COOKIE = [
+    'langCookie' => 'en'
+    '_identity' => '3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    'SQLiteManager_currentLangue' => '4'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/dd/service/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'langCookie=en; _identity=3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; SQLiteManager_currentLangue=4'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.6.10 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/dd/service/stream/index.php'
+    'REMOTE_PORT' => '59794'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dd/service/stream/'
+    'SCRIPT_NAME' => '/dd/service/stream/index.php'
+    'PHP_SELF' => '/dd/service/stream/index.php'
+    'REQUEST_TIME_FLOAT' => 1458126902.95
+    'REQUEST_TIME' => 1458126902
+    'argv' => []
+    'argc' => 0
+]
+2016-03-16 12:18:01 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: /Applications/MAMP/htdocs/dd/service/stream/vendor/bower/jquery/dist' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/AssetManager.php:452
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/AssetBundle.php(179): yii\web\AssetManager->publish('/Applications/M...', Array)
+#1 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/AssetManager.php(237): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/View.php(284): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/View.php(289): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/View.php(289): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/AssetBundle.php(123): yii\web\View->registerAssetBundle('frontend\\assets...')
+#7 /Applications/MAMP/htdocs/dd/service/stream/frontend/views/layouts/main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/View.php(325): require('/Applications/M...')
+#9 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Controller.php(392): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\SiteController))
+#11 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\Controller->renderContent('<div class="sit...')
+#12 /Applications/MAMP/htdocs/dd/service/stream/frontend/controllers/SiteController.php(75): yii\base\Controller->render('index')
+#13 [internal function]: frontend\controllers\SiteController->actionIndex()
+#14 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#17 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#18 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#20 {main}
+2016-03-16 12:18:01 [::1][-][-][info][application] $_COOKIE = [
+    'langCookie' => 'en'
+    '_identity' => '3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    'SQLiteManager_currentLangue' => '4'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/dd/service/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'langCookie=en; _identity=3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; SQLiteManager_currentLangue=4'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.6.10 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/dd/service/stream/index.php'
+    'REMOTE_PORT' => '59899'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dd/service/stream/'
+    'SCRIPT_NAME' => '/dd/service/stream/index.php'
+    'PHP_SELF' => '/dd/service/stream/index.php'
+    'REQUEST_TIME_FLOAT' => 1458127081.16
+    'REQUEST_TIME' => 1458127081
+    'argv' => []
+    'argc' => 0
+]
+2016-03-16 12:20:07 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: /Applications/MAMP/htdocs/dd/service/stream/vendor/bower/jquery/dist' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/AssetManager.php:452
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/AssetBundle.php(179): yii\web\AssetManager->publish('/Applications/M...', Array)
+#1 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/AssetManager.php(237): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/View.php(284): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/View.php(289): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/View.php(289): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/AssetBundle.php(123): yii\web\View->registerAssetBundle('frontend\\assets...')
+#7 /Applications/MAMP/htdocs/dd/service/stream/frontend/views/layouts/main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/View.php(325): require('/Applications/M...')
+#9 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Controller.php(392): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\SiteController))
+#11 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\Controller->renderContent('<div class="sit...')
+#12 /Applications/MAMP/htdocs/dd/service/stream/frontend/controllers/SiteController.php(75): yii\base\Controller->render('index')
+#13 [internal function]: frontend\controllers\SiteController->actionIndex()
+#14 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#17 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#18 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#20 {main}
+2016-03-16 12:20:07 [::1][-][-][info][application] $_COOKIE = [
+    'langCookie' => 'en'
+    '_identity' => '3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    'SQLiteManager_currentLangue' => '4'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/dd/service/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'langCookie=en; _identity=3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; SQLiteManager_currentLangue=4'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.6.10 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/dd/service/stream/index.php'
+    'REMOTE_PORT' => '59947'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dd/service/stream/'
+    'SCRIPT_NAME' => '/dd/service/stream/index.php'
+    'PHP_SELF' => '/dd/service/stream/index.php'
+    'REQUEST_TIME_FLOAT' => 1458127207.44
+    'REQUEST_TIME' => 1458127207
+    'argv' => []
+    'argc' => 0
+]
+2016-03-16 13:04:30 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: /Applications/MAMP/htdocs/dd/service/stream/vendor/bower/bootstrap-material-design/dist' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/AssetManager.php:452
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/AssetBundle.php(179): yii\web\AssetManager->publish('/Applications/M...', Array)
+#1 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/AssetManager.php(237): yii\web\AssetManager->loadBundle('romdim\\bootstra...', Array, true)
+#3 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/View.php(284): yii\web\AssetManager->getBundle('romdim\\bootstra...')
+#4 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/View.php(289): yii\web\View->registerAssetBundle('romdim\\bootstra...', NULL)
+#5 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/AssetBundle.php(123): yii\web\View->registerAssetBundle('frontend\\assets...')
+#6 /Applications/MAMP/htdocs/dd/service/stream/frontend/views/layouts/main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#7 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/View.php(325): require('/Applications/M...')
+#8 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#9 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Controller.php(392): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\SiteController))
+#10 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\Controller->renderContent('<div class="sit...')
+#11 /Applications/MAMP/htdocs/dd/service/stream/frontend/controllers/SiteController.php(75): yii\base\Controller->render('index')
+#12 [internal function]: frontend\controllers\SiteController->actionIndex()
+#13 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#14 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#15 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#16 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#17 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#19 {main}
+2016-03-16 13:04:30 [::1][-][-][info][application] $_COOKIE = [
+    'langCookie' => 'en'
+    '_identity' => '3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    'SQLiteManager_currentLangue' => '4'
+    '_frontendSessionId' => '5c2d66e0fd2720e17866c13d80ae510d'
+    '_frontendCsrf' => 'a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa:2:{i:0;s:13:\"_frontendCsrf\";i:1;s:32:\"XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/dd/service/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'langCookie=en; _identity=3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; SQLiteManager_currentLangue=4; _frontendSessionId=5c2d66e0fd2720e17866c13d80ae510d; _frontendCsrf=a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.6.10 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/dd/service/stream/index.php'
+    'REMOTE_PORT' => '61032'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dd/service/stream/'
+    'SCRIPT_NAME' => '/dd/service/stream/index.php'
+    'PHP_SELF' => '/dd/service/stream/index.php'
+    'REQUEST_TIME_FLOAT' => 1458129870.67
+    'REQUEST_TIME' => 1458129870
+    'argv' => []
+    'argc' => 0
+]
+2016-03-16 13:09:23 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: /Applications/MAMP/htdocs/dd/service/stream/vendor/bower/bootstrap-material-design/dist' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/AssetManager.php:452
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/AssetBundle.php(179): yii\web\AssetManager->publish('/Applications/M...', Array)
+#1 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/AssetManager.php(237): yii\web\AssetManager->loadBundle('romdim\\bootstra...', Array, true)
+#3 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/View.php(284): yii\web\AssetManager->getBundle('romdim\\bootstra...')
+#4 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/View.php(289): yii\web\View->registerAssetBundle('romdim\\bootstra...', NULL)
+#5 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/AssetBundle.php(123): yii\web\View->registerAssetBundle('frontend\\assets...')
+#6 /Applications/MAMP/htdocs/dd/service/stream/frontend/views/layouts/main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#7 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/View.php(325): require('/Applications/M...')
+#8 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#9 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Controller.php(392): yii\base\View->renderFile('/Applications/M...', Array, Object(frontend\controllers\SiteController))
+#10 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\Controller->renderContent('<div class="sit...')
+#11 /Applications/MAMP/htdocs/dd/service/stream/frontend/controllers/SiteController.php(75): yii\base\Controller->render('index')
+#12 [internal function]: frontend\controllers\SiteController->actionIndex()
+#13 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#14 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#15 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#16 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('', Array)
+#17 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#19 {main}
+2016-03-16 13:09:23 [::1][-][-][info][application] $_COOKIE = [
+    'langCookie' => 'en'
+    '_identity' => '3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    'SQLiteManager_currentLangue' => '4'
+    '_frontendSessionId' => '5c2d66e0fd2720e17866c13d80ae510d'
+    '_frontendCsrf' => 'a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa:2:{i:0;s:13:\"_frontendCsrf\";i:1;s:32:\"XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/dd/service/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'langCookie=en; _identity=3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; SQLiteManager_currentLangue=4; _frontendSessionId=5c2d66e0fd2720e17866c13d80ae510d; _frontendCsrf=a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.6.10 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/dd/service/stream/index.php'
+    'REMOTE_PORT' => '61192'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dd/service/stream/'
+    'SCRIPT_NAME' => '/dd/service/stream/index.php'
+    'PHP_SELF' => '/dd/service/stream/index.php'
+    'REQUEST_TIME_FLOAT' => 1458130163.76
+    'REQUEST_TIME' => 1458130163
+    'argv' => []
+    'argc' => 0
+]
+2016-03-16 13:18:10 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "i/dd-logo-l-ico.png".' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('i/dd-logo-l-ico...', Array)
+#1 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-16 13:18:10 [::1][-][-][info][application] $_COOKIE = [
+    'langCookie' => 'en'
+    '_identity' => '3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    'SQLiteManager_currentLangue' => '4'
+    '_frontendSessionId' => '5c2d66e0fd2720e17866c13d80ae510d'
+    '_frontendCsrf' => 'a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa:2:{i:0;s:13:\"_frontendCsrf\";i:1;s:32:\"XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV\";}'
+    '_backendSessionId' => 'a7ac37ce868a7cf2b8e7e2b546d886f4'
+    '_backendCsrf' => '590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a:2:{i:0;s:12:\"_backendCsrf\";i:1;s:32:\"D5fpnZwX99Y6dgjLrNJIk666UPuTXweC\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/dd/service/stream/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'langCookie=en; _identity=3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; SQLiteManager_currentLangue=4; _frontendSessionId=5c2d66e0fd2720e17866c13d80ae510d; _frontendCsrf=a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV%22%3B%7D; _backendSessionId=a7ac37ce868a7cf2b8e7e2b546d886f4; _backendCsrf=590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22D5fpnZwX99Y6dgjLrNJIk666UPuTXweC%22%3B%7D'
+    'HTTP_IF_NONE_MATCH' => '\"18471af-175d-52e2677cb4b40\"'
+    'HTTP_IF_MODIFIED_SINCE' => 'Wed, 16 Mar 2016 08:40:37 GMT'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.6.10 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/dd/service/stream/index.php'
+    'REMOTE_PORT' => '61334'
+    'REDIRECT_URL' => '/dd/service/stream/i/dd-logo-l-ico.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dd/service/stream/i/dd-logo-l-ico.png'
+    'SCRIPT_NAME' => '/dd/service/stream/index.php'
+    'PHP_SELF' => '/dd/service/stream/index.php'
+    'REQUEST_TIME_FLOAT' => 1458130690.91
+    'REQUEST_TIME' => 1458130690
+    'argv' => []
+    'argc' => 0
+]
+2016-03-16 13:19:27 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "i/dd-logo-l-ico.png".' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('i/dd-logo-l-ico...', Array)
+#1 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-16 13:19:27 [::1][-][-][info][application] $_COOKIE = [
+    'langCookie' => 'en'
+    '_identity' => '3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    'SQLiteManager_currentLangue' => '4'
+    '_frontendSessionId' => '5c2d66e0fd2720e17866c13d80ae510d'
+    '_frontendCsrf' => 'a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa:2:{i:0;s:13:\"_frontendCsrf\";i:1;s:32:\"XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV\";}'
+    '_backendSessionId' => 'a7ac37ce868a7cf2b8e7e2b546d886f4'
+    '_backendCsrf' => '590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a:2:{i:0;s:12:\"_backendCsrf\";i:1;s:32:\"D5fpnZwX99Y6dgjLrNJIk666UPuTXweC\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/dd/service/stream/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'langCookie=en; _identity=3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; SQLiteManager_currentLangue=4; _frontendSessionId=5c2d66e0fd2720e17866c13d80ae510d; _frontendCsrf=a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV%22%3B%7D; _backendSessionId=a7ac37ce868a7cf2b8e7e2b546d886f4; _backendCsrf=590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22D5fpnZwX99Y6dgjLrNJIk666UPuTXweC%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.6.10 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/dd/service/stream/index.php'
+    'REMOTE_PORT' => '61351'
+    'REDIRECT_URL' => '/dd/service/stream/i/dd-logo-l-ico.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dd/service/stream/i/dd-logo-l-ico.png'
+    'SCRIPT_NAME' => '/dd/service/stream/index.php'
+    'PHP_SELF' => '/dd/service/stream/index.php'
+    'REQUEST_TIME_FLOAT' => 1458130767.41
+    'REQUEST_TIME' => 1458130767
+    'argv' => []
+    'argc' => 0
+]
+2016-03-16 13:21:20 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "js/jwplayer-7.2.4/jwplayer.js".' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('js/jwplayer-7.2...', Array)
+#1 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-16 13:21:20 [::1][-][-][info][application] $_COOKIE = [
+    'langCookie' => 'en'
+    '_identity' => '3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    'SQLiteManager_currentLangue' => '4'
+    '_frontendSessionId' => '5c2d66e0fd2720e17866c13d80ae510d'
+    '_frontendCsrf' => 'a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa:2:{i:0;s:13:\"_frontendCsrf\";i:1;s:32:\"XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV\";}'
+    '_backendSessionId' => 'a7ac37ce868a7cf2b8e7e2b546d886f4'
+    '_backendCsrf' => '590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a:2:{i:0;s:12:\"_backendCsrf\";i:1;s:32:\"D5fpnZwX99Y6dgjLrNJIk666UPuTXweC\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/dd/service/stream/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'langCookie=en; _identity=3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; SQLiteManager_currentLangue=4; _frontendSessionId=5c2d66e0fd2720e17866c13d80ae510d; _frontendCsrf=a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV%22%3B%7D; _backendSessionId=a7ac37ce868a7cf2b8e7e2b546d886f4; _backendCsrf=590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22D5fpnZwX99Y6dgjLrNJIk666UPuTXweC%22%3B%7D'
+    'HTTP_IF_NONE_MATCH' => '\"1846efd-34922-52692f049c380\"'
+    'HTTP_IF_MODIFIED_SINCE' => 'Thu, 10 Dec 2015 22:43:42 GMT'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.6.10 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/dd/service/stream/index.php'
+    'REMOTE_PORT' => '61409'
+    'REDIRECT_URL' => '/dd/service/stream/js/jwplayer-7.2.4/jwplayer.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dd/service/stream/js/jwplayer-7.2.4/jwplayer.js'
+    'SCRIPT_NAME' => '/dd/service/stream/index.php'
+    'PHP_SELF' => '/dd/service/stream/index.php'
+    'REQUEST_TIME_FLOAT' => 1458130880.96
+    'REQUEST_TIME' => 1458130880
+    'argv' => []
+    'argc' => 0
+]
+2016-03-16 13:21:47 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "js/jwplayer-7.2.4/jwplayer.js".' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('js/jwplayer-7.2...', Array)
+#1 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-16 13:21:47 [::1][-][-][info][application] $_COOKIE = [
+    'langCookie' => 'en'
+    '_identity' => '3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    'SQLiteManager_currentLangue' => '4'
+    '_frontendSessionId' => '5c2d66e0fd2720e17866c13d80ae510d'
+    '_frontendCsrf' => 'a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa:2:{i:0;s:13:\"_frontendCsrf\";i:1;s:32:\"XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV\";}'
+    '_backendSessionId' => 'a7ac37ce868a7cf2b8e7e2b546d886f4'
+    '_backendCsrf' => '590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a:2:{i:0;s:12:\"_backendCsrf\";i:1;s:32:\"D5fpnZwX99Y6dgjLrNJIk666UPuTXweC\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/dd/service/stream/?action='
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'langCookie=en; _identity=3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; SQLiteManager_currentLangue=4; _frontendSessionId=5c2d66e0fd2720e17866c13d80ae510d; _frontendCsrf=a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV%22%3B%7D; _backendSessionId=a7ac37ce868a7cf2b8e7e2b546d886f4; _backendCsrf=590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22D5fpnZwX99Y6dgjLrNJIk666UPuTXweC%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.6.10 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/dd/service/stream/index.php'
+    'REMOTE_PORT' => '61415'
+    'REDIRECT_URL' => '/dd/service/stream/js/jwplayer-7.2.4/jwplayer.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dd/service/stream/js/jwplayer-7.2.4/jwplayer.js'
+    'SCRIPT_NAME' => '/dd/service/stream/index.php'
+    'PHP_SELF' => '/dd/service/stream/index.php'
+    'REQUEST_TIME_FLOAT' => 1458130907.68
+    'REQUEST_TIME' => 1458130907
+    'argv' => []
+    'argc' => 0
+]
+2016-03-16 13:24:31 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "signup".' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('signup', Array)
+#1 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-16 13:24:31 [::1][-][-][info][application] $_COOKIE = [
+    'langCookie' => 'en'
+    '_identity' => '3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    'SQLiteManager_currentLangue' => '4'
+    '_frontendSessionId' => '5c2d66e0fd2720e17866c13d80ae510d'
+    '_frontendCsrf' => 'a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa:2:{i:0;s:13:\"_frontendCsrf\";i:1;s:32:\"XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV\";}'
+    '_backendSessionId' => 'a7ac37ce868a7cf2b8e7e2b546d886f4'
+    '_backendCsrf' => '590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a:2:{i:0;s:12:\"_backendCsrf\";i:1;s:32:\"D5fpnZwX99Y6dgjLrNJIk666UPuTXweC\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'langCookie=en; _identity=3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; SQLiteManager_currentLangue=4; _frontendSessionId=5c2d66e0fd2720e17866c13d80ae510d; _frontendCsrf=a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV%22%3B%7D; _backendSessionId=a7ac37ce868a7cf2b8e7e2b546d886f4; _backendCsrf=590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22D5fpnZwX99Y6dgjLrNJIk666UPuTXweC%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.6.10 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/dd/service/stream/index.php'
+    'REMOTE_PORT' => '61477'
+    'REDIRECT_URL' => '/dd/service/stream/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dd/service/stream/signup'
+    'SCRIPT_NAME' => '/dd/service/stream/index.php'
+    'PHP_SELF' => '/dd/service/stream/index.php'
+    'REQUEST_TIME_FLOAT' => 1458131071.11
+    'REQUEST_TIME' => 1458131071
+    'argv' => []
+    'argc' => 0
+]
+2016-03-16 13:25:53 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "signup".' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('signup', Array)
+#1 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-16 13:25:53 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][info][application] $_COOKIE = [
+    'langCookie' => 'en'
+    '_identity' => '3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    'SQLiteManager_currentLangue' => '4'
+    '_frontendSessionId' => '5c2d66e0fd2720e17866c13d80ae510d'
+    '_frontendCsrf' => 'a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa:2:{i:0;s:13:\"_frontendCsrf\";i:1;s:32:\"XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV\";}'
+    '_backendSessionId' => 'a7ac37ce868a7cf2b8e7e2b546d886f4'
+    '_backendCsrf' => '590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a:2:{i:0;s:12:\"_backendCsrf\";i:1;s:32:\"D5fpnZwX99Y6dgjLrNJIk666UPuTXweC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'langCookie=en; _identity=3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; SQLiteManager_currentLangue=4; _frontendSessionId=5c2d66e0fd2720e17866c13d80ae510d; _frontendCsrf=a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV%22%3B%7D; _backendSessionId=a7ac37ce868a7cf2b8e7e2b546d886f4; _backendCsrf=590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22D5fpnZwX99Y6dgjLrNJIk666UPuTXweC%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.6.10 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/dd/service/stream/index.php'
+    'REMOTE_PORT' => '61512'
+    'REDIRECT_URL' => '/dd/service/stream/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dd/service/stream/signup'
+    'SCRIPT_NAME' => '/dd/service/stream/index.php'
+    'PHP_SELF' => '/dd/service/stream/index.php'
+    'REQUEST_TIME_FLOAT' => 1458131153.55
+    'REQUEST_TIME' => 1458131153
+    'argv' => []
+    'argc' => 0
+]
+2016-03-16 13:27:23 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "signup".' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('signup', Array)
+#1 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-16 13:27:23 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][info][application] $_COOKIE = [
+    'langCookie' => 'en'
+    '_identity' => '3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    'SQLiteManager_currentLangue' => '4'
+    '_frontendSessionId' => '5c2d66e0fd2720e17866c13d80ae510d'
+    '_frontendCsrf' => 'a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa:2:{i:0;s:13:\"_frontendCsrf\";i:1;s:32:\"XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV\";}'
+    '_backendSessionId' => 'a7ac37ce868a7cf2b8e7e2b546d886f4'
+    '_backendCsrf' => '590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a:2:{i:0;s:12:\"_backendCsrf\";i:1;s:32:\"D5fpnZwX99Y6dgjLrNJIk666UPuTXweC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'langCookie=en; _identity=3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; SQLiteManager_currentLangue=4; _frontendSessionId=5c2d66e0fd2720e17866c13d80ae510d; _frontendCsrf=a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV%22%3B%7D; _backendSessionId=a7ac37ce868a7cf2b8e7e2b546d886f4; _backendCsrf=590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22D5fpnZwX99Y6dgjLrNJIk666UPuTXweC%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.6.10 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/dd/service/stream/index.php'
+    'REMOTE_PORT' => '61548'
+    'REDIRECT_URL' => '/dd/service/stream/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dd/service/stream/signup'
+    'SCRIPT_NAME' => '/dd/service/stream/index.php'
+    'PHP_SELF' => '/dd/service/stream/index.php'
+    'REQUEST_TIME_FLOAT' => 1458131243.15
+    'REQUEST_TIME' => 1458131243
+    'argv' => []
+    'argc' => 0
+]
+2016-03-16 13:28:09 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "signup".' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('signup', Array)
+#1 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-16 13:28:09 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][info][application] $_COOKIE = [
+    'langCookie' => 'en'
+    '_identity' => '3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    'SQLiteManager_currentLangue' => '4'
+    '_frontendSessionId' => '5c2d66e0fd2720e17866c13d80ae510d'
+    '_frontendCsrf' => 'a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa:2:{i:0;s:13:\"_frontendCsrf\";i:1;s:32:\"XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV\";}'
+    '_backendSessionId' => 'a7ac37ce868a7cf2b8e7e2b546d886f4'
+    '_backendCsrf' => '590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a:2:{i:0;s:12:\"_backendCsrf\";i:1;s:32:\"D5fpnZwX99Y6dgjLrNJIk666UPuTXweC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'langCookie=en; _identity=3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; SQLiteManager_currentLangue=4; _frontendSessionId=5c2d66e0fd2720e17866c13d80ae510d; _frontendCsrf=a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV%22%3B%7D; _backendSessionId=a7ac37ce868a7cf2b8e7e2b546d886f4; _backendCsrf=590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22D5fpnZwX99Y6dgjLrNJIk666UPuTXweC%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.6.10 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/dd/service/stream/index.php'
+    'REMOTE_PORT' => '61564'
+    'REDIRECT_URL' => '/dd/service/stream/signup'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dd/service/stream/signup'
+    'SCRIPT_NAME' => '/dd/service/stream/index.php'
+    'PHP_SELF' => '/dd/service/stream/index.php'
+    'REQUEST_TIME_FLOAT' => 1458131289.41
+    'REQUEST_TIME' => 1458131289
+    'argv' => []
+    'argc' => 0
+]
+2016-03-16 13:28:14 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "site/lib/s/custom.css".' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/lib/s/cust...', Array)
+#1 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-16 13:28:14 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][info][application] $_COOKIE = [
+    'langCookie' => 'en'
+    '_identity' => '3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    'SQLiteManager_currentLangue' => '4'
+    '_frontendSessionId' => '5c2d66e0fd2720e17866c13d80ae510d'
+    '_frontendCsrf' => 'a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa:2:{i:0;s:13:\"_frontendCsrf\";i:1;s:32:\"XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV\";}'
+    '_backendSessionId' => 'a7ac37ce868a7cf2b8e7e2b546d886f4'
+    '_backendCsrf' => '590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a:2:{i:0;s:12:\"_backendCsrf\";i:1;s:32:\"D5fpnZwX99Y6dgjLrNJIk666UPuTXweC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/dd/service/stream/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'langCookie=en; _identity=3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; SQLiteManager_currentLangue=4; _frontendSessionId=5c2d66e0fd2720e17866c13d80ae510d; _frontendCsrf=a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV%22%3B%7D; _backendSessionId=a7ac37ce868a7cf2b8e7e2b546d886f4; _backendCsrf=590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22D5fpnZwX99Y6dgjLrNJIk666UPuTXweC%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.6.10 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/dd/service/stream/index.php'
+    'REMOTE_PORT' => '61569'
+    'REDIRECT_URL' => '/dd/service/stream/site/lib/s/custom.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dd/service/stream/site/lib/s/custom.css'
+    'SCRIPT_NAME' => '/dd/service/stream/index.php'
+    'PHP_SELF' => '/dd/service/stream/index.php'
+    'REQUEST_TIME_FLOAT' => 1458131294.9
+    'REQUEST_TIME' => 1458131294
+    'argv' => []
+    'argc' => 0
+]
+2016-03-16 13:28:14 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "site/lib/js/jwplayer-7.2.4/jwplayer.js".' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/lib/js/jwp...', Array)
+#1 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-16 13:28:14 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][info][application] $_COOKIE = [
+    'langCookie' => 'en'
+    '_identity' => '3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    'SQLiteManager_currentLangue' => '4'
+    '_frontendSessionId' => '5c2d66e0fd2720e17866c13d80ae510d'
+    '_frontendCsrf' => 'a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa:2:{i:0;s:13:\"_frontendCsrf\";i:1;s:32:\"XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV\";}'
+    '_backendSessionId' => 'a7ac37ce868a7cf2b8e7e2b546d886f4'
+    '_backendCsrf' => '590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a:2:{i:0;s:12:\"_backendCsrf\";i:1;s:32:\"D5fpnZwX99Y6dgjLrNJIk666UPuTXweC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/dd/service/stream/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'langCookie=en; _identity=3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; SQLiteManager_currentLangue=4; _frontendSessionId=5c2d66e0fd2720e17866c13d80ae510d; _frontendCsrf=a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV%22%3B%7D; _backendSessionId=a7ac37ce868a7cf2b8e7e2b546d886f4; _backendCsrf=590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22D5fpnZwX99Y6dgjLrNJIk666UPuTXweC%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.6.10 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/dd/service/stream/index.php'
+    'REMOTE_PORT' => '61570'
+    'REDIRECT_URL' => '/dd/service/stream/site/lib/js/jwplayer-7.2.4/jwplayer.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dd/service/stream/site/lib/js/jwplayer-7.2.4/jwplayer.js'
+    'SCRIPT_NAME' => '/dd/service/stream/index.php'
+    'PHP_SELF' => '/dd/service/stream/index.php'
+    'REQUEST_TIME_FLOAT' => 1458131294.91
+    'REQUEST_TIME' => 1458131294
+    'argv' => []
+    'argc' => 0
+]
+2016-03-16 13:28:27 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "site/lib/s/custom.css".' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/lib/s/cust...', Array)
+#1 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-16 13:28:27 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][info][application] $_COOKIE = [
+    'langCookie' => 'en'
+    '_identity' => '3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    'SQLiteManager_currentLangue' => '4'
+    '_frontendSessionId' => '5c2d66e0fd2720e17866c13d80ae510d'
+    '_frontendCsrf' => 'a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa:2:{i:0;s:13:\"_frontendCsrf\";i:1;s:32:\"XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV\";}'
+    '_backendSessionId' => 'a7ac37ce868a7cf2b8e7e2b546d886f4'
+    '_backendCsrf' => '590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a:2:{i:0;s:12:\"_backendCsrf\";i:1;s:32:\"D5fpnZwX99Y6dgjLrNJIk666UPuTXweC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/dd/service/stream/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'langCookie=en; _identity=3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; SQLiteManager_currentLangue=4; _frontendSessionId=5c2d66e0fd2720e17866c13d80ae510d; _frontendCsrf=a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV%22%3B%7D; _backendSessionId=a7ac37ce868a7cf2b8e7e2b546d886f4; _backendCsrf=590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22D5fpnZwX99Y6dgjLrNJIk666UPuTXweC%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.6.10 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/dd/service/stream/index.php'
+    'REMOTE_PORT' => '61574'
+    'REDIRECT_URL' => '/dd/service/stream/site/lib/s/custom.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dd/service/stream/site/lib/s/custom.css'
+    'SCRIPT_NAME' => '/dd/service/stream/index.php'
+    'PHP_SELF' => '/dd/service/stream/index.php'
+    'REQUEST_TIME_FLOAT' => 1458131307.74
+    'REQUEST_TIME' => 1458131307
+    'argv' => []
+    'argc' => 0
+]
+2016-03-16 13:29:22 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "site/lib/s/custom.css".' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/lib/s/cust...', Array)
+#1 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-16 13:29:22 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][info][application] $_COOKIE = [
+    'langCookie' => 'en'
+    '_identity' => '3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    'SQLiteManager_currentLangue' => '4'
+    '_frontendSessionId' => '5c2d66e0fd2720e17866c13d80ae510d'
+    '_frontendCsrf' => 'a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa:2:{i:0;s:13:\"_frontendCsrf\";i:1;s:32:\"XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV\";}'
+    '_backendSessionId' => 'a7ac37ce868a7cf2b8e7e2b546d886f4'
+    '_backendCsrf' => '590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a:2:{i:0;s:12:\"_backendCsrf\";i:1;s:32:\"D5fpnZwX99Y6dgjLrNJIk666UPuTXweC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/dd/service/stream/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'langCookie=en; _identity=3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; SQLiteManager_currentLangue=4; _frontendSessionId=5c2d66e0fd2720e17866c13d80ae510d; _frontendCsrf=a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV%22%3B%7D; _backendSessionId=a7ac37ce868a7cf2b8e7e2b546d886f4; _backendCsrf=590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22D5fpnZwX99Y6dgjLrNJIk666UPuTXweC%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.6.10 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/dd/service/stream/index.php'
+    'REMOTE_PORT' => '61576'
+    'REDIRECT_URL' => '/dd/service/stream/site/lib/s/custom.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dd/service/stream/site/lib/s/custom.css'
+    'SCRIPT_NAME' => '/dd/service/stream/index.php'
+    'PHP_SELF' => '/dd/service/stream/index.php'
+    'REQUEST_TIME_FLOAT' => 1458131362.33
+    'REQUEST_TIME' => 1458131362
+    'argv' => []
+    'argc' => 0
+]
+2016-03-16 13:29:22 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "site/lib/js/jwplayer-7.2.4/jwplayer.js".' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/lib/js/jwp...', Array)
+#1 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-16 13:29:22 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][info][application] $_COOKIE = [
+    'langCookie' => 'en'
+    '_identity' => '3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    'SQLiteManager_currentLangue' => '4'
+    '_frontendSessionId' => '5c2d66e0fd2720e17866c13d80ae510d'
+    '_frontendCsrf' => 'a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa:2:{i:0;s:13:\"_frontendCsrf\";i:1;s:32:\"XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV\";}'
+    '_backendSessionId' => 'a7ac37ce868a7cf2b8e7e2b546d886f4'
+    '_backendCsrf' => '590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a:2:{i:0;s:12:\"_backendCsrf\";i:1;s:32:\"D5fpnZwX99Y6dgjLrNJIk666UPuTXweC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/dd/service/stream/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'langCookie=en; _identity=3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; SQLiteManager_currentLangue=4; _frontendSessionId=5c2d66e0fd2720e17866c13d80ae510d; _frontendCsrf=a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV%22%3B%7D; _backendSessionId=a7ac37ce868a7cf2b8e7e2b546d886f4; _backendCsrf=590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22D5fpnZwX99Y6dgjLrNJIk666UPuTXweC%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.6.10 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/dd/service/stream/index.php'
+    'REMOTE_PORT' => '61577'
+    'REDIRECT_URL' => '/dd/service/stream/site/lib/js/jwplayer-7.2.4/jwplayer.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dd/service/stream/site/lib/js/jwplayer-7.2.4/jwplayer.js'
+    'SCRIPT_NAME' => '/dd/service/stream/index.php'
+    'PHP_SELF' => '/dd/service/stream/index.php'
+    'REQUEST_TIME_FLOAT' => 1458131362.33
+    'REQUEST_TIME' => 1458131362
+    'argv' => []
+    'argc' => 0
+]
+2016-03-16 13:29:54 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "site/lib/s/custom.css".' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/lib/s/cust...', Array)
+#1 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-16 13:29:54 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][info][application] $_COOKIE = [
+    'langCookie' => 'en'
+    '_identity' => '3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    'SQLiteManager_currentLangue' => '4'
+    '_frontendSessionId' => '5c2d66e0fd2720e17866c13d80ae510d'
+    '_frontendCsrf' => 'a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa:2:{i:0;s:13:\"_frontendCsrf\";i:1;s:32:\"XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV\";}'
+    '_backendSessionId' => 'a7ac37ce868a7cf2b8e7e2b546d886f4'
+    '_backendCsrf' => '590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a:2:{i:0;s:12:\"_backendCsrf\";i:1;s:32:\"D5fpnZwX99Y6dgjLrNJIk666UPuTXweC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/dd/service/stream/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'langCookie=en; _identity=3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; SQLiteManager_currentLangue=4; _frontendSessionId=5c2d66e0fd2720e17866c13d80ae510d; _frontendCsrf=a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV%22%3B%7D; _backendSessionId=a7ac37ce868a7cf2b8e7e2b546d886f4; _backendCsrf=590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22D5fpnZwX99Y6dgjLrNJIk666UPuTXweC%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.6.10 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/dd/service/stream/index.php'
+    'REMOTE_PORT' => '61586'
+    'REDIRECT_URL' => '/dd/service/stream/site/lib/s/custom.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dd/service/stream/site/lib/s/custom.css'
+    'SCRIPT_NAME' => '/dd/service/stream/index.php'
+    'PHP_SELF' => '/dd/service/stream/index.php'
+    'REQUEST_TIME_FLOAT' => 1458131394.26
+    'REQUEST_TIME' => 1458131394
+    'argv' => []
+    'argc' => 0
+]
+2016-03-16 13:29:54 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "site/lib/js/jwplayer-7.2.4/jwplayer.js".' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/lib/js/jwp...', Array)
+#1 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-16 13:29:54 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][info][application] $_COOKIE = [
+    'langCookie' => 'en'
+    '_identity' => '3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    'SQLiteManager_currentLangue' => '4'
+    '_frontendSessionId' => '5c2d66e0fd2720e17866c13d80ae510d'
+    '_frontendCsrf' => 'a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa:2:{i:0;s:13:\"_frontendCsrf\";i:1;s:32:\"XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV\";}'
+    '_backendSessionId' => 'a7ac37ce868a7cf2b8e7e2b546d886f4'
+    '_backendCsrf' => '590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a:2:{i:0;s:12:\"_backendCsrf\";i:1;s:32:\"D5fpnZwX99Y6dgjLrNJIk666UPuTXweC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/dd/service/stream/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'langCookie=en; _identity=3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; SQLiteManager_currentLangue=4; _frontendSessionId=5c2d66e0fd2720e17866c13d80ae510d; _frontendCsrf=a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV%22%3B%7D; _backendSessionId=a7ac37ce868a7cf2b8e7e2b546d886f4; _backendCsrf=590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22D5fpnZwX99Y6dgjLrNJIk666UPuTXweC%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.6.10 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/dd/service/stream/index.php'
+    'REMOTE_PORT' => '61590'
+    'REDIRECT_URL' => '/dd/service/stream/site/lib/js/jwplayer-7.2.4/jwplayer.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dd/service/stream/site/lib/js/jwplayer-7.2.4/jwplayer.js'
+    'SCRIPT_NAME' => '/dd/service/stream/index.php'
+    'PHP_SELF' => '/dd/service/stream/index.php'
+    'REQUEST_TIME_FLOAT' => 1458131394.26
+    'REQUEST_TIME' => 1458131394
+    'argv' => []
+    'argc' => 0
+]
+2016-03-16 13:30:28 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "site/lib/s/custom.css".' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/lib/s/cust...', Array)
+#1 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-16 13:30:28 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][info][application] $_COOKIE = [
+    'langCookie' => 'en'
+    '_identity' => '3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    'SQLiteManager_currentLangue' => '4'
+    '_frontendSessionId' => '5c2d66e0fd2720e17866c13d80ae510d'
+    '_frontendCsrf' => 'a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa:2:{i:0;s:13:\"_frontendCsrf\";i:1;s:32:\"XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV\";}'
+    '_backendSessionId' => 'a7ac37ce868a7cf2b8e7e2b546d886f4'
+    '_backendCsrf' => '590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a:2:{i:0;s:12:\"_backendCsrf\";i:1;s:32:\"D5fpnZwX99Y6dgjLrNJIk666UPuTXweC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/dd/service/stream/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'langCookie=en; _identity=3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; SQLiteManager_currentLangue=4; _frontendSessionId=5c2d66e0fd2720e17866c13d80ae510d; _frontendCsrf=a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV%22%3B%7D; _backendSessionId=a7ac37ce868a7cf2b8e7e2b546d886f4; _backendCsrf=590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22D5fpnZwX99Y6dgjLrNJIk666UPuTXweC%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.6.10 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/dd/service/stream/index.php'
+    'REMOTE_PORT' => '61595'
+    'REDIRECT_URL' => '/dd/service/stream/site/lib/s/custom.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dd/service/stream/site/lib/s/custom.css'
+    'SCRIPT_NAME' => '/dd/service/stream/index.php'
+    'PHP_SELF' => '/dd/service/stream/index.php'
+    'REQUEST_TIME_FLOAT' => 1458131428.6
+    'REQUEST_TIME' => 1458131428
+    'argv' => []
+    'argc' => 0
+]
+2016-03-16 13:30:28 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "site/lib/js/jwplayer-7.2.4/jwplayer.js".' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/lib/js/jwp...', Array)
+#1 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-16 13:30:28 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][info][application] $_COOKIE = [
+    'langCookie' => 'en'
+    '_identity' => '3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    'SQLiteManager_currentLangue' => '4'
+    '_frontendSessionId' => '5c2d66e0fd2720e17866c13d80ae510d'
+    '_frontendCsrf' => 'a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa:2:{i:0;s:13:\"_frontendCsrf\";i:1;s:32:\"XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV\";}'
+    '_backendSessionId' => 'a7ac37ce868a7cf2b8e7e2b546d886f4'
+    '_backendCsrf' => '590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a:2:{i:0;s:12:\"_backendCsrf\";i:1;s:32:\"D5fpnZwX99Y6dgjLrNJIk666UPuTXweC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/dd/service/stream/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'langCookie=en; _identity=3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; SQLiteManager_currentLangue=4; _frontendSessionId=5c2d66e0fd2720e17866c13d80ae510d; _frontendCsrf=a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV%22%3B%7D; _backendSessionId=a7ac37ce868a7cf2b8e7e2b546d886f4; _backendCsrf=590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22D5fpnZwX99Y6dgjLrNJIk666UPuTXweC%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.6.10 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/dd/service/stream/index.php'
+    'REMOTE_PORT' => '61597'
+    'REDIRECT_URL' => '/dd/service/stream/site/lib/js/jwplayer-7.2.4/jwplayer.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dd/service/stream/site/lib/js/jwplayer-7.2.4/jwplayer.js'
+    'SCRIPT_NAME' => '/dd/service/stream/index.php'
+    'PHP_SELF' => '/dd/service/stream/index.php'
+    'REQUEST_TIME_FLOAT' => 1458131428.6
+    'REQUEST_TIME' => 1458131428
+    'argv' => []
+    'argc' => 0
+]
+2016-03-16 13:30:35 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "site/lib/s/custom.css".' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/lib/s/cust...', Array)
+#1 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-16 13:30:35 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][info][application] $_COOKIE = [
+    'langCookie' => 'en'
+    '_identity' => '3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    'SQLiteManager_currentLangue' => '4'
+    '_frontendSessionId' => '5c2d66e0fd2720e17866c13d80ae510d'
+    '_frontendCsrf' => 'a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa:2:{i:0;s:13:\"_frontendCsrf\";i:1;s:32:\"XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV\";}'
+    '_backendSessionId' => 'a7ac37ce868a7cf2b8e7e2b546d886f4'
+    '_backendCsrf' => '590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a:2:{i:0;s:12:\"_backendCsrf\";i:1;s:32:\"D5fpnZwX99Y6dgjLrNJIk666UPuTXweC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/dd/service/stream/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'langCookie=en; _identity=3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; SQLiteManager_currentLangue=4; _frontendSessionId=5c2d66e0fd2720e17866c13d80ae510d; _frontendCsrf=a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV%22%3B%7D; _backendSessionId=a7ac37ce868a7cf2b8e7e2b546d886f4; _backendCsrf=590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22D5fpnZwX99Y6dgjLrNJIk666UPuTXweC%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.6.10 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/dd/service/stream/index.php'
+    'REMOTE_PORT' => '61601'
+    'REDIRECT_URL' => '/dd/service/stream/site/lib/s/custom.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dd/service/stream/site/lib/s/custom.css'
+    'SCRIPT_NAME' => '/dd/service/stream/index.php'
+    'PHP_SELF' => '/dd/service/stream/index.php'
+    'REQUEST_TIME_FLOAT' => 1458131435.23
+    'REQUEST_TIME' => 1458131435
+    'argv' => []
+    'argc' => 0
+]
+2016-03-16 13:31:26 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "site/lib/js/jwplayer-7.2.4/jwplayer.js".' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/lib/js/jwp...', Array)
+#1 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-16 13:31:26 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][info][application] $_COOKIE = [
+    'langCookie' => 'en'
+    '_identity' => '3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    'SQLiteManager_currentLangue' => '4'
+    '_frontendSessionId' => '5c2d66e0fd2720e17866c13d80ae510d'
+    '_frontendCsrf' => 'a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa:2:{i:0;s:13:\"_frontendCsrf\";i:1;s:32:\"XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV\";}'
+    '_backendSessionId' => 'a7ac37ce868a7cf2b8e7e2b546d886f4'
+    '_backendCsrf' => '590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a:2:{i:0;s:12:\"_backendCsrf\";i:1;s:32:\"D5fpnZwX99Y6dgjLrNJIk666UPuTXweC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/dd/service/stream/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'langCookie=en; _identity=3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; SQLiteManager_currentLangue=4; _frontendSessionId=5c2d66e0fd2720e17866c13d80ae510d; _frontendCsrf=a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV%22%3B%7D; _backendSessionId=a7ac37ce868a7cf2b8e7e2b546d886f4; _backendCsrf=590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22D5fpnZwX99Y6dgjLrNJIk666UPuTXweC%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.6.10 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/dd/service/stream/index.php'
+    'REMOTE_PORT' => '61612'
+    'REDIRECT_URL' => '/dd/service/stream/site/lib/js/jwplayer-7.2.4/jwplayer.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dd/service/stream/site/lib/js/jwplayer-7.2.4/jwplayer.js'
+    'SCRIPT_NAME' => '/dd/service/stream/index.php'
+    'PHP_SELF' => '/dd/service/stream/index.php'
+    'REQUEST_TIME_FLOAT' => 1458131486.64
+    'REQUEST_TIME' => 1458131486
+    'argv' => []
+    'argc' => 0
+]
+2016-03-16 13:31:26 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "site/lib/s/custom.css".' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/lib/s/cust...', Array)
+#1 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-16 13:31:26 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][info][application] $_COOKIE = [
+    'langCookie' => 'en'
+    '_identity' => '3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    'SQLiteManager_currentLangue' => '4'
+    '_frontendSessionId' => '5c2d66e0fd2720e17866c13d80ae510d'
+    '_frontendCsrf' => 'a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa:2:{i:0;s:13:\"_frontendCsrf\";i:1;s:32:\"XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV\";}'
+    '_backendSessionId' => 'a7ac37ce868a7cf2b8e7e2b546d886f4'
+    '_backendCsrf' => '590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a:2:{i:0;s:12:\"_backendCsrf\";i:1;s:32:\"D5fpnZwX99Y6dgjLrNJIk666UPuTXweC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/dd/service/stream/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'langCookie=en; _identity=3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; SQLiteManager_currentLangue=4; _frontendSessionId=5c2d66e0fd2720e17866c13d80ae510d; _frontendCsrf=a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV%22%3B%7D; _backendSessionId=a7ac37ce868a7cf2b8e7e2b546d886f4; _backendCsrf=590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22D5fpnZwX99Y6dgjLrNJIk666UPuTXweC%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.6.10 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/dd/service/stream/index.php'
+    'REMOTE_PORT' => '61609'
+    'REDIRECT_URL' => '/dd/service/stream/site/lib/s/custom.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dd/service/stream/site/lib/s/custom.css'
+    'SCRIPT_NAME' => '/dd/service/stream/index.php'
+    'PHP_SELF' => '/dd/service/stream/index.php'
+    'REQUEST_TIME_FLOAT' => 1458131486.64
+    'REQUEST_TIME' => 1458131486
+    'argv' => []
+    'argc' => 0
+]
+2016-03-16 13:32:28 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "site/lib/s/custom.css".' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/lib/s/cust...', Array)
+#1 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-16 13:32:28 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][info][application] $_COOKIE = [
+    'langCookie' => 'en'
+    '_identity' => '3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    'SQLiteManager_currentLangue' => '4'
+    '_frontendSessionId' => '5c2d66e0fd2720e17866c13d80ae510d'
+    '_frontendCsrf' => 'a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa:2:{i:0;s:13:\"_frontendCsrf\";i:1;s:32:\"XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV\";}'
+    '_backendSessionId' => 'a7ac37ce868a7cf2b8e7e2b546d886f4'
+    '_backendCsrf' => '590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a:2:{i:0;s:12:\"_backendCsrf\";i:1;s:32:\"D5fpnZwX99Y6dgjLrNJIk666UPuTXweC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/dd/service/stream/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'langCookie=en; _identity=3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; SQLiteManager_currentLangue=4; _frontendSessionId=5c2d66e0fd2720e17866c13d80ae510d; _frontendCsrf=a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV%22%3B%7D; _backendSessionId=a7ac37ce868a7cf2b8e7e2b546d886f4; _backendCsrf=590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22D5fpnZwX99Y6dgjLrNJIk666UPuTXweC%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.6.10 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/dd/service/stream/index.php'
+    'REMOTE_PORT' => '61619'
+    'REDIRECT_URL' => '/dd/service/stream/site/lib/s/custom.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dd/service/stream/site/lib/s/custom.css'
+    'SCRIPT_NAME' => '/dd/service/stream/index.php'
+    'PHP_SELF' => '/dd/service/stream/index.php'
+    'REQUEST_TIME_FLOAT' => 1458131548.47
+    'REQUEST_TIME' => 1458131548
+    'argv' => []
+    'argc' => 0
+]
+2016-03-16 13:32:28 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "site/i/dd-logo-l-ico.png".' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/i/dd-logo-...', Array)
+#1 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-16 13:32:28 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][info][application] $_COOKIE = [
+    'langCookie' => 'en'
+    '_identity' => '3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    'SQLiteManager_currentLangue' => '4'
+    '_frontendSessionId' => '5c2d66e0fd2720e17866c13d80ae510d'
+    '_frontendCsrf' => 'a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa:2:{i:0;s:13:\"_frontendCsrf\";i:1;s:32:\"XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV\";}'
+    '_backendSessionId' => 'a7ac37ce868a7cf2b8e7e2b546d886f4'
+    '_backendCsrf' => '590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a:2:{i:0;s:12:\"_backendCsrf\";i:1;s:32:\"D5fpnZwX99Y6dgjLrNJIk666UPuTXweC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/dd/service/stream/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'langCookie=en; _identity=3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; SQLiteManager_currentLangue=4; _frontendSessionId=5c2d66e0fd2720e17866c13d80ae510d; _frontendCsrf=a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV%22%3B%7D; _backendSessionId=a7ac37ce868a7cf2b8e7e2b546d886f4; _backendCsrf=590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22D5fpnZwX99Y6dgjLrNJIk666UPuTXweC%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.6.10 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/dd/service/stream/index.php'
+    'REMOTE_PORT' => '61620'
+    'REDIRECT_URL' => '/dd/service/stream/site/i/dd-logo-l-ico.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dd/service/stream/site/i/dd-logo-l-ico.png'
+    'SCRIPT_NAME' => '/dd/service/stream/index.php'
+    'PHP_SELF' => '/dd/service/stream/index.php'
+    'REQUEST_TIME_FLOAT' => 1458131548.47
+    'REQUEST_TIME' => 1458131548
+    'argv' => []
+    'argc' => 0
+]
+2016-03-16 13:32:28 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "site/lib/js/jwplayer-7.2.4/jwplayer.js".' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/lib/js/jwp...', Array)
+#1 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-16 13:32:28 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][info][application] $_COOKIE = [
+    'langCookie' => 'en'
+    '_identity' => '3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    'SQLiteManager_currentLangue' => '4'
+    '_frontendSessionId' => '5c2d66e0fd2720e17866c13d80ae510d'
+    '_frontendCsrf' => 'a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa:2:{i:0;s:13:\"_frontendCsrf\";i:1;s:32:\"XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV\";}'
+    '_backendSessionId' => 'a7ac37ce868a7cf2b8e7e2b546d886f4'
+    '_backendCsrf' => '590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a:2:{i:0;s:12:\"_backendCsrf\";i:1;s:32:\"D5fpnZwX99Y6dgjLrNJIk666UPuTXweC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/dd/service/stream/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'langCookie=en; _identity=3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; SQLiteManager_currentLangue=4; _frontendSessionId=5c2d66e0fd2720e17866c13d80ae510d; _frontendCsrf=a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV%22%3B%7D; _backendSessionId=a7ac37ce868a7cf2b8e7e2b546d886f4; _backendCsrf=590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22D5fpnZwX99Y6dgjLrNJIk666UPuTXweC%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.6.10 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/dd/service/stream/index.php'
+    'REMOTE_PORT' => '61621'
+    'REDIRECT_URL' => '/dd/service/stream/site/lib/js/jwplayer-7.2.4/jwplayer.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dd/service/stream/site/lib/js/jwplayer-7.2.4/jwplayer.js'
+    'SCRIPT_NAME' => '/dd/service/stream/index.php'
+    'PHP_SELF' => '/dd/service/stream/index.php'
+    'REQUEST_TIME_FLOAT' => 1458131548.47
+    'REQUEST_TIME' => 1458131548
+    'argv' => []
+    'argc' => 0
+]
+2016-03-16 13:32:37 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "site/lib/s/custom.css".' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/lib/s/cust...', Array)
+#1 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-16 13:32:37 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][info][application] $_COOKIE = [
+    'langCookie' => 'en'
+    '_identity' => '3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    'SQLiteManager_currentLangue' => '4'
+    '_frontendSessionId' => '5c2d66e0fd2720e17866c13d80ae510d'
+    '_frontendCsrf' => 'a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa:2:{i:0;s:13:\"_frontendCsrf\";i:1;s:32:\"XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV\";}'
+    '_backendSessionId' => 'a7ac37ce868a7cf2b8e7e2b546d886f4'
+    '_backendCsrf' => '590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a:2:{i:0;s:12:\"_backendCsrf\";i:1;s:32:\"D5fpnZwX99Y6dgjLrNJIk666UPuTXweC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/dd/service/stream/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'langCookie=en; _identity=3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; SQLiteManager_currentLangue=4; _frontendSessionId=5c2d66e0fd2720e17866c13d80ae510d; _frontendCsrf=a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV%22%3B%7D; _backendSessionId=a7ac37ce868a7cf2b8e7e2b546d886f4; _backendCsrf=590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22D5fpnZwX99Y6dgjLrNJIk666UPuTXweC%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.6.10 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/dd/service/stream/index.php'
+    'REMOTE_PORT' => '61626'
+    'REDIRECT_URL' => '/dd/service/stream/site/lib/s/custom.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dd/service/stream/site/lib/s/custom.css'
+    'SCRIPT_NAME' => '/dd/service/stream/index.php'
+    'PHP_SELF' => '/dd/service/stream/index.php'
+    'REQUEST_TIME_FLOAT' => 1458131557.1
+    'REQUEST_TIME' => 1458131557
+    'argv' => []
+    'argc' => 0
+]
+2016-03-16 13:32:37 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "site/lib/js/jwplayer-7.2.4/jwplayer.js".' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/lib/js/jwp...', Array)
+#1 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-16 13:32:37 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][info][application] $_COOKIE = [
+    'langCookie' => 'en'
+    '_identity' => '3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    'SQLiteManager_currentLangue' => '4'
+    '_frontendSessionId' => '5c2d66e0fd2720e17866c13d80ae510d'
+    '_frontendCsrf' => 'a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa:2:{i:0;s:13:\"_frontendCsrf\";i:1;s:32:\"XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV\";}'
+    '_backendSessionId' => 'a7ac37ce868a7cf2b8e7e2b546d886f4'
+    '_backendCsrf' => '590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a:2:{i:0;s:12:\"_backendCsrf\";i:1;s:32:\"D5fpnZwX99Y6dgjLrNJIk666UPuTXweC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/dd/service/stream/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'langCookie=en; _identity=3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; SQLiteManager_currentLangue=4; _frontendSessionId=5c2d66e0fd2720e17866c13d80ae510d; _frontendCsrf=a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV%22%3B%7D; _backendSessionId=a7ac37ce868a7cf2b8e7e2b546d886f4; _backendCsrf=590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22D5fpnZwX99Y6dgjLrNJIk666UPuTXweC%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.6.10 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/dd/service/stream/index.php'
+    'REMOTE_PORT' => '61628'
+    'REDIRECT_URL' => '/dd/service/stream/site/lib/js/jwplayer-7.2.4/jwplayer.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dd/service/stream/site/lib/js/jwplayer-7.2.4/jwplayer.js'
+    'SCRIPT_NAME' => '/dd/service/stream/index.php'
+    'PHP_SELF' => '/dd/service/stream/index.php'
+    'REQUEST_TIME_FLOAT' => 1458131557.11
+    'REQUEST_TIME' => 1458131557
+    'argv' => []
+    'argc' => 0
+]
+2016-03-16 13:32:37 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "site/lib/i/dd-logo-l-ico.png".' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/lib/i/dd-l...', Array)
+#1 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-16 13:32:37 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][info][application] $_COOKIE = [
+    'langCookie' => 'en'
+    '_identity' => '3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    'SQLiteManager_currentLangue' => '4'
+    '_frontendSessionId' => '5c2d66e0fd2720e17866c13d80ae510d'
+    '_frontendCsrf' => 'a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa:2:{i:0;s:13:\"_frontendCsrf\";i:1;s:32:\"XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV\";}'
+    '_backendSessionId' => 'a7ac37ce868a7cf2b8e7e2b546d886f4'
+    '_backendCsrf' => '590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a:2:{i:0;s:12:\"_backendCsrf\";i:1;s:32:\"D5fpnZwX99Y6dgjLrNJIk666UPuTXweC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/dd/service/stream/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'langCookie=en; _identity=3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; SQLiteManager_currentLangue=4; _frontendSessionId=5c2d66e0fd2720e17866c13d80ae510d; _frontendCsrf=a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV%22%3B%7D; _backendSessionId=a7ac37ce868a7cf2b8e7e2b546d886f4; _backendCsrf=590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22D5fpnZwX99Y6dgjLrNJIk666UPuTXweC%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.6.10 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/dd/service/stream/index.php'
+    'REMOTE_PORT' => '61627'
+    'REDIRECT_URL' => '/dd/service/stream/site/lib/i/dd-logo-l-ico.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dd/service/stream/site/lib/i/dd-logo-l-ico.png'
+    'SCRIPT_NAME' => '/dd/service/stream/index.php'
+    'PHP_SELF' => '/dd/service/stream/index.php'
+    'REQUEST_TIME_FLOAT' => 1458131557.1
+    'REQUEST_TIME' => 1458131557
+    'argv' => []
+    'argc' => 0
+]
+2016-03-16 13:32:39 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "site/lib/i/dd-logo-l-ico.png".' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/lib/i/dd-l...', Array)
+#1 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-16 13:32:39 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][info][application] $_COOKIE = [
+    'langCookie' => 'en'
+    '_identity' => '3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    'SQLiteManager_currentLangue' => '4'
+    '_frontendSessionId' => '5c2d66e0fd2720e17866c13d80ae510d'
+    '_frontendCsrf' => 'a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa:2:{i:0;s:13:\"_frontendCsrf\";i:1;s:32:\"XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV\";}'
+    '_backendSessionId' => 'a7ac37ce868a7cf2b8e7e2b546d886f4'
+    '_backendCsrf' => '590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a:2:{i:0;s:12:\"_backendCsrf\";i:1;s:32:\"D5fpnZwX99Y6dgjLrNJIk666UPuTXweC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/dd/service/stream/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'langCookie=en; _identity=3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; SQLiteManager_currentLangue=4; _frontendSessionId=5c2d66e0fd2720e17866c13d80ae510d; _frontendCsrf=a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV%22%3B%7D; _backendSessionId=a7ac37ce868a7cf2b8e7e2b546d886f4; _backendCsrf=590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22D5fpnZwX99Y6dgjLrNJIk666UPuTXweC%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.6.10 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/dd/service/stream/index.php'
+    'REMOTE_PORT' => '61626'
+    'REDIRECT_URL' => '/dd/service/stream/site/lib/i/dd-logo-l-ico.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dd/service/stream/site/lib/i/dd-logo-l-ico.png'
+    'SCRIPT_NAME' => '/dd/service/stream/index.php'
+    'PHP_SELF' => '/dd/service/stream/index.php'
+    'REQUEST_TIME_FLOAT' => 1458131559.26
+    'REQUEST_TIME' => 1458131559
+    'argv' => []
+    'argc' => 0
+]
+2016-03-16 13:32:39 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "site/lib/s/custom.css".' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/lib/s/cust...', Array)
+#1 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-16 13:32:39 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][info][application] $_COOKIE = [
+    'langCookie' => 'en'
+    '_identity' => '3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    'SQLiteManager_currentLangue' => '4'
+    '_frontendSessionId' => '5c2d66e0fd2720e17866c13d80ae510d'
+    '_frontendCsrf' => 'a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa:2:{i:0;s:13:\"_frontendCsrf\";i:1;s:32:\"XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV\";}'
+    '_backendSessionId' => 'a7ac37ce868a7cf2b8e7e2b546d886f4'
+    '_backendCsrf' => '590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a:2:{i:0;s:12:\"_backendCsrf\";i:1;s:32:\"D5fpnZwX99Y6dgjLrNJIk666UPuTXweC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/dd/service/stream/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'langCookie=en; _identity=3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; SQLiteManager_currentLangue=4; _frontendSessionId=5c2d66e0fd2720e17866c13d80ae510d; _frontendCsrf=a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV%22%3B%7D; _backendSessionId=a7ac37ce868a7cf2b8e7e2b546d886f4; _backendCsrf=590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22D5fpnZwX99Y6dgjLrNJIk666UPuTXweC%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.6.10 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/dd/service/stream/index.php'
+    'REMOTE_PORT' => '61627'
+    'REDIRECT_URL' => '/dd/service/stream/site/lib/s/custom.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dd/service/stream/site/lib/s/custom.css'
+    'SCRIPT_NAME' => '/dd/service/stream/index.php'
+    'PHP_SELF' => '/dd/service/stream/index.php'
+    'REQUEST_TIME_FLOAT' => 1458131559.26
+    'REQUEST_TIME' => 1458131559
+    'argv' => []
+    'argc' => 0
+]
+2016-03-16 13:32:39 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "site/lib/js/jwplayer-7.2.4/jwplayer.js".' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Module.php:460
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/lib/js/jwp...', Array)
+#1 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Applications/MAMP/htdocs/dd/service/stream/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/dd/service/stream/index.php(18): yii\base\Application->run()
+#2 {main}
+2016-03-16 13:32:39 [::1][-][5c2d66e0fd2720e17866c13d80ae510d][info][application] $_COOKIE = [
+    'langCookie' => 'en'
+    '_identity' => '3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a:2:{i:0;s:9:\"_identity\";i:1;s:14:\"[3,\"\",2592000]\";}'
+    'SQLiteManager_currentLangue' => '4'
+    '_frontendSessionId' => '5c2d66e0fd2720e17866c13d80ae510d'
+    '_frontendCsrf' => 'a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa:2:{i:0;s:13:\"_frontendCsrf\";i:1;s:32:\"XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV\";}'
+    '_backendSessionId' => 'a7ac37ce868a7cf2b8e7e2b546d886f4'
+    '_backendCsrf' => '590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a:2:{i:0;s:12:\"_backendCsrf\";i:1;s:32:\"D5fpnZwX99Y6dgjLrNJIk666UPuTXweC\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/dd/service/stream/site/signup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-DE,de;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => 'langCookie=en; _identity=3a1236536f4111dc1743ef85ac8b4941f0395b2c0c16a13c1f16b33c516ebdd0a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A14%3A%22%5B3%2C%22%22%2C2592000%5D%22%3B%7D; SQLiteManager_currentLangue=4; _frontendSessionId=5c2d66e0fd2720e17866c13d80ae510d; _frontendCsrf=a71b3cdc892af4d711fc10bd5efa0e2716c92d5845adb30c87989644468c44cfa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22XCJ3Tj46gBJLak6D_qmtHmB-IpACUyBV%22%3B%7D; _backendSessionId=a7ac37ce868a7cf2b8e7e2b546d886f4; _backendCsrf=590cb95b22b95ac673f2a43791ddb6c6580c8e7e1b6c78b606328d23f3a54eb0a%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendCsrf%22%3Bi%3A1%3Bs%3A32%3A%22D5fpnZwX99Y6dgjLrNJIk666UPuTXweC%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.6.10 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/dd/service/stream/index.php'
+    'REMOTE_PORT' => '61629'
+    'REDIRECT_URL' => '/dd/service/stream/site/lib/js/jwplayer-7.2.4/jwplayer.js'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/dd/service/stream/site/lib/js/jwplayer-7.2.4/jwplayer.js'
+    'SCRIPT_NAME' => '/dd/service/stream/index.php'
+    'PHP_SELF' => '/dd/service/stream/index.php'
+    'REQUEST_TIME_FLOAT' => 1458131559.26
+    'REQUEST_TIME' => 1458131559
+    'argv' => []
+    'argc' => 0
+]
