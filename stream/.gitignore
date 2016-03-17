@@ -6,8 +6,8 @@
 /yii
 
 # phpstorm project files
-.idea
-/.idea
+/.idea/
+.idea/workspace.xml
 
 # netbeans project files
 nbproject
