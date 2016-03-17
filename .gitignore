@@ -3,9 +3,12 @@
 ### Example user template
 
 # IntelliJ project files
-.idea/
+.idea
+/.idea
+
 stream/.idea/
 *.iml
 out
 gen
-stream-demo
+stream/*.log
+.xml
