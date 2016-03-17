@@ -1,6 +1,6 @@
 <?php
 
-namespace app\models;
+namespace backend\models;
 
 use Yii;
 
@@ -40,7 +40,7 @@ class Stream extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'code', 'modified_by'], 'required'],
+            [['name', 'code'], 'required'],
             [['url', 'description', 'details', 'config'], 'string'],
             [['parent', 'active', 'modified_by'], 'integer'],
             [['start', 'end', 'modified_at'], 'safe'],
@@ -56,19 +56,19 @@ class Stream extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => Yii::t('app', 'ID'),
-            'name' => Yii::t('app', 'Name'),
-            'url' => Yii::t('app', 'Url'),
-            'code' => Yii::t('app', 'Code'),
-            'description' => Yii::t('app', 'Description'),
-            'details' => Yii::t('app', 'Details'),
-            'config' => Yii::t('app', 'Config'),
-            'parent' => Yii::t('app', 'Parent'),
-            'active' => Yii::t('app', 'Active'),
-            'start' => Yii::t('app', 'Start'),
-            'end' => Yii::t('app', 'End'),
-            'modified_at' => Yii::t('app', 'Modified At'),
-            'modified_by' => Yii::t('app', 'Modified By'),
+            'id' => Yii::t('backend', 'ID'),
+            'name' => Yii::t('backend', 'Name'),
+            'url' => Yii::t('backend', 'Url'),
+            'code' => Yii::t('backend', 'Code'),
+            'description' => Yii::t('backend', 'Description'),
+            'details' => Yii::t('backend', 'Details'),
+            'config' => Yii::t('backend', 'Config'),
+            'parent' => Yii::t('backend', 'Parent'),
+            'active' => Yii::t('backend', 'Active'),
+            'start' => Yii::t('backend', 'Start'),
+            'end' => Yii::t('backend', 'End'),
+            'modified_at' => Yii::t('backend', 'Modified At'),
+            'modified_by' => Yii::t('backend', 'Modified By'),
         ];
     }
 

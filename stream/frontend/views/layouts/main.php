@@ -85,23 +85,6 @@ AppAsset::register($this);
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
 <script type="text/javascript" src="lib/js/jwplayer-7.2.4/jwplayer.js"></script>
 <script>jwplayer.key="ncdTabgDLIeEgRAICd0tGmSubWrsH0jMCrGHsg";</script>
-<script type="text/javascript">
-    jwplayer("ddplayer").setup({
-        playlist: [{
-            sources: [{
-                file: "rtmp://148.251.133.116:1935/live/mp4:hirtenkonferenz"
-            },{
-                file: "http://148.251.133.116:1935/live/mp4:hirtenkonferenz/playlist.m3u8"
-            }]
-        }],
-        rtmp: {
-            bufferlength: 6
-        },
-        primary: "html5",
-        width: "100%",
-        aspectratio: "16:9"
-    });
-</script>
 
 <?php $this->endBody() ?>
 </body>

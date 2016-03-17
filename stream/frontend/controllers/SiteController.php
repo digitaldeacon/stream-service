@@ -72,7 +72,15 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $p = Yii::$app->request->post();
+        $stream = null;
+        if(isset($p['code'])) {
+            $stream = \backend\models\Stream::find()
+                ->where(['code'=>trim($p['code']),'active'=>1])
+                ->one();
+        }
+
+        return $this->render('index',['stream'=>$stream]);
     }
 
     /**
