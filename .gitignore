@@ -10,6 +10,8 @@
 stream/.idea/
 stream/frontend/runtime/
 stream/backend/runtime/
+stream/index.php
+
 *.iml
 out
 gen
