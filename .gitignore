@@ -8,6 +8,8 @@
 
 
 stream/.idea/
+stream/frontend/runtime/
+stream/backend/runtime/
 *.iml
 out
 gen
