@@ -53,4 +53,5 @@ return [
     'Username' => 'Benutzer',
     'Users' => 'Benutzer',
     'Value' => 'Wert',
+    '---- Select Stream ----' => '---- Stream Auswählen ----'
 ];

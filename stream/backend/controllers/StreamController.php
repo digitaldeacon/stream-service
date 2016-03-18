@@ -64,16 +64,27 @@ class StreamController extends Controller
     public function actionCreate()
     {
         $model = new Stream();
+        $p = Yii::$app->request->post();
 
-        $model->modified_by = \Yii::$app->user->identity->id;
+        if($p) {
+            $model->load($p);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
-        } else {
-            return $this->render('create', [
-                'model' => $model,
-            ]);
+            $model->start = date('Y-m-d H:i:s',strtotime($p['start-stream-start']));
+            $model->end = date('Y-m-d H:i:s',strtotime($p['end-stream-end']));
+            $model->modified_by = \Yii::$app->user->identity->id;
+
+            if ($model->save()) {
+                return $this->redirect(['view', 'id' => $model->id]);
+            } else {
+                return $this->render('create', [
+                    'model' => $model,
+                ]);
+            }
         }
+
+        return $this->render('create', [
+            'model' => $model,
+        ]);
     }
 
     /**
@@ -85,14 +96,27 @@ class StreamController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
+        $p = Yii::$app->request->post();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
-        } else {
-            return $this->render('update', [
-                'model' => $model,
-            ]);
+        if($p) {
+            $model->load($p);
+
+            $model->start = date('Y-m-d H:i:s',strtotime($p['start-stream-start']));
+            $model->end = date('Y-m-d H:i:s',strtotime($p['end-stream-end']));
+            $model->modified_by = \Yii::$app->user->identity->id;
+
+            if ($model->save()) {
+                return $this->redirect(['view', 'id' => $model->id]);
+            } else {
+                return $this->render('update', [
+                    'model' => $model,
+                ]);
+            }
         }
+
+        return $this->render('update', [
+            'model' => $model,
+        ]);
     }
 
     /**

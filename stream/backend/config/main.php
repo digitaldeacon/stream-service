@@ -18,9 +18,9 @@ return [
             'class' => '\kartik\datecontrol\Module',
             // format settings for displaying each date attribute (ICU format example)
             'displaySettings' => [
-                Module::FORMAT_DATE => 'dd-MM-yyyy',
-                Module::FORMAT_TIME => 'hh:mm:ss a',
-                Module::FORMAT_DATETIME => 'dd-MM-yyyy hh:mm:ss a',
+                Module::FORMAT_DATE => 'yyyy-MM-dd',
+                Module::FORMAT_TIME => 'hh:mm:ss',
+                Module::FORMAT_DATETIME => 'yyyy-MM-dd hh:mm:ss',
             ],
             // format settings for saving each date attribute (PHP format example)
             'saveSettings' => [
@@ -31,7 +31,7 @@ return [
             // set your display timezone
             'displayTimezone' => 'Europe/Berlin',
             // set your timezone for date saved to db
-            'saveTimezone' => 'UTC',
+            'saveTimezone' => 'Europe/Berlin',
             // automatically use kartik\widgets for each of the above formats
             'autoWidget' => true,
             // default settings for each widget from kartik\widgets used when autoWidget is true

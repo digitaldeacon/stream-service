@@ -5,6 +5,7 @@ use yii\widgets\ActiveForm;
 use kartik\datecontrol\DateControl;
 use kartik\switchinput\SwitchInput;
 use dosamigos\tinymce\TinyMce;
+use yii\helpers\ArrayHelper;
 
 /* @var $this yii\web\View */
 /* @var $model backend\models\Stream */
@@ -20,6 +21,24 @@ use dosamigos\tinymce\TinyMce;
     <?= $form->field($model, 'url')->textarea(['rows' => 6]) ?>
 
     <?= $form->field($model, 'code')->textInput(['maxlength' => true]) ?>
+
+    <?php $streamsArray = ArrayHelper::map(\backend\models\Stream::find()
+        ->where('id != :id',['id'=>$model->id])
+        ->orderBy('name')->all(), 'id', 'name') ?>
+    <?= $form->field($model, 'parent')->dropDownList($streamsArray, ['prompt' => '']) ?>
+
+    <?= $form->field($model, 'active')->widget(SwitchInput::classname(), [
+        'type' => SwitchInput::CHECKBOX
+    ]); ?>
+
+    <?= $form->field($model, 'start')->widget(DateControl::classname(), [
+        'type'=>DateControl::FORMAT_DATETIME
+    ]);
+    ?>
+
+    <?= $form->field($model, 'end')->widget(DateControl::classname(), [
+        'type'=>DateControl::FORMAT_DATETIME
+    ]); ?>
 
     <?= $form->field($model, 'description')->textarea(['rows' => 6]) ?>
 
@@ -37,21 +56,6 @@ use dosamigos\tinymce\TinyMce;
     ]); ?>
 
     <?= $form->field($model, 'config')->textarea(['rows' => 6]) ?>
-
-    <?= ''//$form->field($model, 'parent')->textInput() ?>
-
-    <?= $form->field($model, 'active')->widget(SwitchInput::classname(), [
-        'type' => SwitchInput::CHECKBOX
-    ]); ?>
-
-    <?= $form->field($model, 'start')->widget(DateControl::classname(), [
-        'type'=>DateControl::FORMAT_DATETIME
-    ]);
-    ?>
-
-    <?= $form->field($model, 'end')->widget(DateControl::classname(), [
-        'type'=>DateControl::FORMAT_DATETIME
-    ]); ?>
 
 
     <div class="form-group">
