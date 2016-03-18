@@ -20,7 +20,7 @@ class m160318_093701_table_add_stream extends Migration
           `end` datetime DEFAULT NULL,
           `modified_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
           `modified_by` int(11) NOT NULL
-        ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci");
+        ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8");
     }
 
     public function down()
