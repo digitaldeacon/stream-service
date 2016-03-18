@@ -8,12 +8,12 @@ class m160318_093701_table_add_stream extends Migration
     {
         $this->execute("CREATE TABLE `stream` (
           `id` int(11) NOT NULL,
-          `name` varchar(120) CHARACTER SET latin1 NOT NULL,
-          `url` text CHARACTER SET latin1,
-          `code` varchar(12) CHARACTER SET latin1 NOT NULL,
-          `description` text CHARACTER SET latin1,
-          `details` mediumtext CHARACTER SET latin1,
-          `config` text CHARACTER SET latin1,
+          `name` varchar(120) CHARACTER SET utf8_unicode_ci NOT NULL,
+          `url` text CHARACTER SET utf8_unicode_ci,
+          `code` varchar(12) CHARACTER SET utf8_unicode_ci NOT NULL,
+          `description` text CHARACTER SET utf8_unicode_ci,
+          `details` mediumtext CHARACTER SET utf8_unicode_ci,
+          `config` text CHARACTER SET utf8_unicode_ci,
           `parent` int(11) DEFAULT NULL,
           `active` tinyint(1) NOT NULL DEFAULT '0',
           `start` datetime DEFAULT NULL,
