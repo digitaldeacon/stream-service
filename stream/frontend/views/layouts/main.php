@@ -11,6 +11,10 @@ use frontend\assets\AppAsset;
 use common\widgets\Alert;
 
 AppAsset::register($this);
+
+$this->registerJsFile("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js",['depends' => [\yii\web\JqueryAsset::className()]]);
+$this->registerJsFile("lib/js/jwplayer-7.2.4/jwplayer.js",['position' => \yii\web\View::POS_END]);
+
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -81,10 +85,6 @@ AppAsset::register($this);
         </div>
     </div>
 </footer>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-<script type="text/javascript" src="lib/js/jwplayer-7.2.4/jwplayer.js"></script>
-<script>jwplayer.key="ncdTabgDLIeEgRAICd0tGmSubWrsH0jMCrGHsg";</script>
 
 <?php $this->endBody() ?>
 </body>

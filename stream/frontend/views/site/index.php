@@ -2,7 +2,7 @@
 
 /* @var $this yii\web\View */
 
-$this->title = isset($stream->name) ? 'Seminar | '.$stream->name : 'My Yii Application';
+$this->title = isset($stream->name) ? 'Seminar | '.$stream->name : 'Stream Service';
 ?>
 <div class="row">
 
@@ -13,12 +13,12 @@ $this->title = isset($stream->name) ? 'Seminar | '.$stream->name : 'My Yii Appli
                 <div class="row">
                     Um den Stream zu schauen benötigen sei einen Berechtigungscode, den sie hier eingeben müssen. Wenn sie keinen gültigen Code besitzen wenden sie sich an: shop@ebtc-media.org.
                 </div>
-                <form method="post">
+                <form axtion="index.php" method="get">
                     <div class="row">
                         <nav class="teal lighten-4">
                             <div class="nav-wrapper">
                                 <div class="input-field">
-                                    <input id="search" name="code" type="search" class="codesearch" required>
+                                    <input id="search" name="s" type="search" class="codesearch" required>
                                     <label for="search"><i class="material-icons">label</i></label>
                                     <i class="material-icons">close</i>
                                 </div>
@@ -26,7 +26,7 @@ $this->title = isset($stream->name) ? 'Seminar | '.$stream->name : 'My Yii Appli
                         </nav>
                     </div>
                     <div class="row">
-                        <button class="btn waves-effect waves-light" type="submit" name="action">Abschicken
+                        <button class="btn waves-effect waves-light" type="submit">Abschicken
                             <i class="material-icons right">cloud</i>
                         </button>
                     </div>
@@ -40,19 +40,38 @@ $this->title = isset($stream->name) ? 'Seminar | '.$stream->name : 'My Yii Appli
             <div class="section">
 
                 <div class="card hoverable">
-                    <div class="card-image">
+                    <div class="card-image waves-effect waves-block waves-light">
                         <div id="ddplayer"><div class="indeterminate"></div></div>
                     </div>
                     <div class="card-content">
-                        <p><?= $stream->description ?></p>
+                        <span class="card-title activator grey-text text-darken-4">
+                            <?= $stream->description ?><i class="material-icons right">more_vert</i>
+                        </span>
                     </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                    <?php
+                    foreach($stream->childStreams as $child):
+                    ?>
+                    <div class="card-action">
+                       <span class="time badge">
+                           <i class="material-icons">schedule</i>
+                           <?= date('d M H:i',strtotime($child->start)) ?>
+                       </span>
+                        <a href="?s=<?= $child->code ?>"><?= $child->name ?></a>
+                    </div>
+                    <?php endforeach; ?>
                 </div>
 
             </div>
         </div>
 
     <?php
-    $jw = 'jwplayer("ddplayer").setup({
+    $jw = '
+    jwplayer.key="ncdTabgDLIeEgRAICd0tGmSubWrsH0jMCrGHsg";
+    jwplayer("ddplayer").setup({
                 playlist: [{
                     sources: [{
                         file: "rtmp://'.$stream->url.'"
@@ -68,7 +87,6 @@ $this->title = isset($stream->name) ? 'Seminar | '.$stream->name : 'My Yii Appli
                 aspectratio: "16:9"
             });';
     $this->registerJs($jw,\yii\web\View::POS_END,'jwplayer');
-    //$this->registerJs()
     ?>
 
     <?php endif; ?>

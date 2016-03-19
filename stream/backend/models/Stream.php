@@ -87,4 +87,9 @@ class Stream extends \yii\db\ActiveRecord
     {
         return $this->hasMany(StreamLog::className(), ['stream_id' => 'id']);
     }
+
+    public function getChildStreams()
+    {
+        return $this->hasMany(Stream::className(), ['parent' => 'id']);
+    }
 }
