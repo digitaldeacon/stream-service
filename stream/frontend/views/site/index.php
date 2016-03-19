@@ -36,7 +36,6 @@ $this->title = isset($stream->name) ? 'Seminar | '.$stream->name : 'Stream Servi
         </div>
     <?php else: ?>
         <div class="col s12">
-            <div class="section"><?= $stream->details ?></div>
             <div class="section">
 
                 <div class="card hoverable">
@@ -49,16 +48,14 @@ $this->title = isset($stream->name) ? 'Seminar | '.$stream->name : 'Stream Servi
                         </span>
                     </div>
                     <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        <span class="card-title grey-text text-darken-4"><?= Yii::t('frontend', 'Stream Details')?><i class="material-icons right"><?= Yii::t('frontend', 'close') ?></i></span>
+                        <?= $stream->details ?>
                     </div>
-                    <?php
-                    foreach($stream->childStreams as $child):
-                    ?>
+                    <?php foreach($stream->childStreams as $child): ?>
                     <div class="card-action">
                        <span class="time badge">
                            <i class="material-icons">schedule</i>
-                           <?= date('d M H:i',strtotime($child->start)) ?>
+                           <?= date('D d M H:i',strtotime($child->start)) ?>
                        </span>
                         <a href="?s=<?= $child->code ?>"><?= $child->name ?></a>
                     </div>
