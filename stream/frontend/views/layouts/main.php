@@ -12,8 +12,10 @@ use common\widgets\Alert;
 
 AppAsset::register($this);
 
-$this->registerJsFile("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js",['depends' => [\yii\web\JqueryAsset::className()]]);
+$this->registerJsFile("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js",['depends' => [\yii\web\JqueryAsset::className()]]);
 $this->registerJsFile("lib/js/jwplayer-7.2.4/jwplayer.js",['position' => \yii\web\View::POS_END]);
+
+$action = Yii::$app->controller->action->controller->id;
 
 ?>
 <?php $this->beginPage() ?>
@@ -27,7 +29,7 @@ $this->registerJsFile("lib/js/jwplayer-7.2.4/jwplayer.js",['position' => \yii\we
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css" media="screen,projection">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css" media="screen,projection">
     <!--Let browser know website is optimized for mobile-->
     <link rel="stylesheet" href="lib/s/custom.css" media="screen,projection" />
     <?php $this->head() ?>
@@ -35,6 +37,7 @@ $this->registerJsFile("lib/js/jwplayer-7.2.4/jwplayer.js",['position' => \yii\we
 <body>
 <?php $this->beginBody() ?>
 
+<?php if($action!='frame') : ?>
 <header>
     <nav class="blue lighten-4">
         <div class="nav-wrapper">
@@ -53,6 +56,7 @@ $this->registerJsFile("lib/js/jwplayer-7.2.4/jwplayer.js",['position' => \yii\we
         </div>
     </nav>
 </header>
+<?php endif; ?>
 
 <div class="container">
     <?= Breadcrumbs::widget([
@@ -62,15 +66,16 @@ $this->registerJsFile("lib/js/jwplayer-7.2.4/jwplayer.js",['position' => \yii\we
     <?= $content ?>
 </div>
 
+<?php if($action!='frame') : ?>
 <footer class="page-footer blue lighten-3">
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
                 <h5 class="white-text">Digital Deacon Streaming Services</h5>
-                <p class="grey-text text-lighten-4">Digital Deacon gibt dir die Möglichkeit deine Termine auch im Netz zu zeigen.</p>
+                <p class="grey-text text-lighten-4"><?=Yii::t('frontend', 'info.footer.about')?></p>
             </div>
             <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
+                <h5 class="white-text"><?=Yii::t('frontend', 'menu.links')?></h5>
                 <ul>
                     <li><a class="grey-text text-lighten-3" href="http://digital-deacon.org">Digital Deacon</a></li>
                     <li><a class="grey-text text-lighten-3" href="http://materializecss.com">Materialize CSS</a></li>
@@ -85,6 +90,7 @@ $this->registerJsFile("lib/js/jwplayer-7.2.4/jwplayer.js",['position' => \yii\we
         </div>
     </div>
 </footer>
+<?php endif; ?>
 
 <?php $this->endBody() ?>
 </body>

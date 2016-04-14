@@ -1,4 +1,5 @@
 <?php
+use yii\helpers\Html;
 
 /* @var $this yii\web\View */
 
@@ -11,8 +12,18 @@ $this->title = isset($stream->name) ? 'Seminar | '.$stream->name : 'Stream Servi
             <div class="section jumbo">
 
                 <div class="row">
-                    Um den Stream zu schauen benötigen sei einen Berechtigungscode, den sie hier eingeben müssen. Wenn sie keinen gültigen Code besitzen wenden sie sich an: shop@ebtc-media.org.
+                    <?=Yii::t('frontend', 'info.start.usage')?>
                 </div>
+                <?php if($stream->hasErrors()) {
+                    echo '<div class="row">';
+                    foreach ($stream->getErrors('code') as $error) {
+                        echo '
+                        <div class="chip red lighten-2 error-chip"> '.$error.'
+                        <i class="material-icons">close</i></div>
+                        ';
+                    }//Html::error($stream,'code', ['class' => 'chip red lighten-2']);
+                    echo '</div>';
+                } ?>
                 <form axtion="index.php" method="get">
                     <div class="row">
                         <nav class="teal lighten-4">
@@ -26,7 +37,7 @@ $this->title = isset($stream->name) ? 'Seminar | '.$stream->name : 'Stream Servi
                         </nav>
                     </div>
                     <div class="row">
-                        <button class="btn waves-effect waves-light" type="submit">Abschicken
+                        <button class="btn waves-effect waves-light" type="submit"><?= Yii::t('frontend', 'button.send')?>
                             <i class="material-icons right">cloud</i>
                         </button>
                     </div>
@@ -48,7 +59,7 @@ $this->title = isset($stream->name) ? 'Seminar | '.$stream->name : 'Stream Servi
                         </span>
                     </div>
                     <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4"><?= Yii::t('frontend', 'Stream Details')?><i class="material-icons right"><?= Yii::t('frontend', 'close') ?></i></span>
+                        <span class="card-title grey-text text-darken-4"><?= Yii::t('frontend', 'menu.stream.details')?><i class="material-icons right">close</i></span>
                         <?= $stream->details ?>
                     </div>
                     <?php foreach($stream->childStreams as $child): ?>

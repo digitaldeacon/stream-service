@@ -12,6 +12,7 @@ use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
+use backend\models\Stream;
 
 /**
  * Site controller
@@ -73,12 +74,15 @@ class SiteController extends Controller
     public function actionIndex()
     {
         //$p = Yii::$app->request->post();
-        $stream = null;
+        $stream = new Stream();
         if(isset($_GET['s'])) {
-
             $stream = \backend\models\Stream::find()
                 ->where(['code'=>trim($_GET['s']),'active'=>1])
                 ->one();
+            if(empty($stream)) {
+                $stream = new Stream();
+                $stream->addError('code',Yii::t('frontend', 'error.code.invalid'));
+            }
         }
 
         return $this->render('index',['stream'=>$stream]);

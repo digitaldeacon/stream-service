@@ -17,14 +17,19 @@
  * NOTE: this file must be saved in UTF-8 encoding.
  */
 return [
-    'Active' => 'Aktiv',
     'Are you sure you want to delete this item?' => '',
     'Auth Key' => '',
+    'Create Stream Log' => '',
+    'Password Hash' => '',
+    'Password Reset Token' => '',
+    'Update {modelClass}: ' => 'Aktualisiere {modelClass}',
+    'menu.login' => 'Login',
+    'menu.stream' => 'Stream',
+    'Active' => 'Aktiv',
     'Code' => 'Code',
     'Config' => 'Konfiguration',
     'Create' => 'Erstellen',
     'Create Stream' => 'Erstelle Stream',
-    'Create Stream Log' => '',
     'Create User' => 'Erstelle Benutzer',
     'Created At' => 'Erstellt am',
     'Delete' => 'Löschen',
@@ -37,8 +42,6 @@ return [
     'Modified By' => 'Verändert von',
     'Name' => 'Name',
     'Parent' => 'Eltern',
-    'Password Hash' => '',
-    'Password Reset Token' => '',
     'Start' => 'Beginn',
     'Status' => 'Status',
     'Stream ID' => 'Stream Kennung',
@@ -47,11 +50,9 @@ return [
     'Timestamp' => 'Zeitstempel',
     'Type' => 'Typ',
     'Update' => 'Aktualisieren',
-    'Update {modelClass}: ' => '',
     'Updated At' => 'Aktualisiert am',
     'Url' => 'URL',
     'Username' => 'Benutzer',
     'Users' => 'Benutzer',
     'Value' => 'Wert',
-    '---- Select Stream ----' => '---- Stream Auswählen ----'
 ];

@@ -28,7 +28,7 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => 'My Company',
+        'brandLabel' => 'DigitalDeacon',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
@@ -38,9 +38,9 @@ AppAsset::register($this);
         ['label' => 'Home', 'url' => ['/site/index']],
     ];
     if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
+        $menuItems[] = ['label' => Yii::t('backend', 'menu.login'), 'url' => ['/site/login']];
     } else {
-        $menuItems[] = ['label' => 'Streams', 'url' => ['/stream']];
+        $menuItems[] = ['label' => Yii::t('backend', 'menu.stream'), 'url' => ['/stream']];
         $menuItems[] = [
             'label' => 'Logout (' . Yii::$app->user->identity->username . ')',
             'url' => ['/site/logout'],
@@ -65,7 +65,7 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
+        <p class="pull-left">&copy; DigitalDeacon <?= date('Y') ?></p>
 
         <p class="pull-right"><?= Yii::powered() ?></p>
     </div>
