@@ -67,7 +67,7 @@ AppAsset::register($this);
     <div class="container">
         <p class="pull-left">&copy; DigitalDeacon <?= date('Y') ?></p>
 
-        <p class="pull-right"><?= Yii::powered() ?></p>
+        <p class="pull-right"><?=Yii::$app->params['app.name']?> v.<?=Yii::$app->params['version']?>,</p>
     </div>
 </footer>
 

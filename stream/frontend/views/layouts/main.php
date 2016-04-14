@@ -86,7 +86,10 @@ $action = Yii::$app->controller->action->controller->id;
         </div>
     </div>
     <div class="footer-copyright">
-        <div class="container">&copy; <?= date('Y') ?> DigitalDeacon <a class="grey-text text-lighten-4 right" href="http://ebtc-online.org">EBTC Online</a>
+        <div class="container">
+            <?=Yii::$app->params['app.name']?> v.<?=Yii::$app->params['version']?>,
+            &copy; <?= date('Y') ?> DigitalDeacon
+            <a class="grey-text text-lighten-4 right" href="http://ebtc-online.org">EBTC Online</a>
         </div>
     </div>
 </footer>
