@@ -94,3 +94,7 @@ a.desc:after {
     font-size: 1.1em;
     color: #fdf7f7;
 }
+
+.input-field {
+    height: 64px;
+}
