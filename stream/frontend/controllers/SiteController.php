@@ -84,7 +84,6 @@ class SiteController extends Controller
                 $stream->addError('code',Yii::t('frontend', 'error.code.invalid'));
             }
         }
-
         return $this->render('index',['stream'=>$stream]);
     }
 

@@ -7,12 +7,12 @@ $this->title = isset($stream->name) ? 'Seminar | '.$stream->name : 'Stream Servi
 ?>
 <div class="row">
 
-    <?php if(!isset($stream->url)):?>
+    <?php if(!isset($stream->url) || isset($_GET['sid'])):?>
         <div class="col s12">
             <div class="section jumbo">
 
                 <div class="row">
-                    <?=Yii::t('frontend', 'info.start.usage')?>
+                    <?=empty($stream->form_pre) ? Yii::t('frontend', 'info.start.usage') : $stream->form_pre;?>
                 </div>
                 <?php if($stream->hasErrors()) {
                     echo '<div class="row">';

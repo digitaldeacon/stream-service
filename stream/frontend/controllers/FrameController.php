@@ -83,6 +83,14 @@ class FrameController extends Controller
                 $stream->addError('code',Yii::t('frontend', 'error.code.invalid'));
             }
         }
+        if(isset($_GET['sid'])) {
+            $stream = \backend\models\Stream::find()
+                ->where(['id'=>trim($_GET['sid']),'active'=>1])
+                ->one();
+            if(empty($stream)) {
+                $stream = new Stream();
+            }
+        }
 
         return $this->render('@frontend/views/site/index',['stream'=>$stream]);
     }

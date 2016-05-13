@@ -6,7 +6,7 @@ use yii\helpers\Html;
 /* @var $model app\models\Stream */
 
 $this->title = Yii::t('backend', 'Update {modelClass}: ', [
-    'modelClass' => 'Stream',
+    'modelClass' => 'Stream ['.$model->id.'] - ',
 ]) . $model->name;
 $this->params['breadcrumbs'][] = ['label' => Yii::t('backend', 'Streams'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->name, 'url' => ['view', 'id' => $model->id]];

@@ -41,7 +41,7 @@ class Stream extends \yii\db\ActiveRecord
     {
         return [
             [['name', 'code'], 'required'],
-            [['url', 'description', 'details', 'config'], 'string'],
+            [['url', 'description', 'details', 'config','form_pre'], 'string'],
             [['parent', 'active', 'modified_by'], 'integer'],
             [['start', 'end', 'modified_at'], 'safe'],
             [['name'], 'string', 'max' => 120],
@@ -69,6 +69,7 @@ class Stream extends \yii\db\ActiveRecord
             'end' => Yii::t('backend', 'End'),
             'modified_at' => Yii::t('backend', 'Modified At'),
             'modified_by' => Yii::t('backend', 'Modified By'),
+            'form_pre' => Yii::t('backend', 'Description before form'),
         ];
     }
 

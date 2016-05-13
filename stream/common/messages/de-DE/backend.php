@@ -55,4 +55,6 @@ return [
     'Username' => 'Benutzer',
     'Users' => 'Benutzer',
     'Value' => 'Wert',
+    'Description before form' => 'Beschreibung vor Input',
+    'Frame URL' => 'URL für iFrame Anbindung'
 ];
