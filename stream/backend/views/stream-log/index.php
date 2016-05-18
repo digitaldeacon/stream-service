@@ -21,6 +21,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'stream_id',
             'type',
             'value:ntext',
+            'clientip',
             'timestamp',
 
             ['class' => 'yii\grid\ActionColumn'],
