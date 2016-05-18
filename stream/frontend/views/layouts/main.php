@@ -13,7 +13,9 @@ use common\widgets\Alert;
 AppAsset::register($this);
 
 $this->registerJsFile("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js",['depends' => [\yii\web\JqueryAsset::className()]]);
-$this->registerJsFile("lib/js/jwplayer-7.2.4/jwplayer.js",['position' => \yii\web\View::POS_END]);
+$this->registerJsFile("@web/lib/js/jwplayer-7.2.4/jwplayer.js",['position' => \yii\web\View::POS_END]);
+
+$this->registerCssFile("@web/lib/s/custom.css");
 
 $action = Yii::$app->controller->action->controller->id;
 
@@ -31,7 +33,7 @@ $action = Yii::$app->controller->action->controller->id;
     <!--Import materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css" media="screen,projection">
     <!--Let browser know website is optimized for mobile-->
-    <link rel="stylesheet" href="lib/s/custom.css" media="screen,projection" />
+
     <?php $this->head() ?>
 </head>
 <body>
