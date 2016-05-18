@@ -32,7 +32,7 @@ use yii\helpers\ArrayHelper;
 
     <?= $form->field($model, 'code')->textInput(['maxlength' => true]) ?>
 
-    <?php $streamsArray = ArrayHelper::map(\backend\models\Stream::find()
+    <?php $streamsArray = ArrayHelper::map(\common\models\Stream::find()
         ->where('id != :id',['id'=>$model->id])
         ->orderBy('name')->all(), 'id', 'name') ?>
     <?= $form->field($model, 'parent')->dropDownList($streamsArray, ['prompt' => '']) ?>

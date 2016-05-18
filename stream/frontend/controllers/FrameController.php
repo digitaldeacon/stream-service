@@ -5,7 +5,7 @@ use Yii;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
-use backend\models\Stream;
+use common\models\Stream;
 
 /**
  * Site controller
@@ -68,7 +68,7 @@ class FrameController extends Controller
     {
         $stream = new Stream();
         if(isset($_GET['s'])) {
-            $stream = \backend\models\Stream::find()
+            $stream = Stream::find()
                 ->where(['code'=>trim($_GET['s']),'active'=>1])
                 ->one();
             if(empty($stream)) {
@@ -79,7 +79,7 @@ class FrameController extends Controller
             }
         }
         if(isset($_GET['sid'])) {
-            $stream = \backend\models\Stream::find()
+            $stream = Stream::find()
                 ->where(['id'=>trim($_GET['sid']),'active'=>1])
                 ->one();
             if(empty($stream)) {
