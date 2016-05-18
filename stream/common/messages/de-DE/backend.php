@@ -25,6 +25,7 @@ return [
     'Update {modelClass}: ' => 'Aktualisiere {modelClass}',
     'menu.login' => 'Login',
     'menu.stream' => 'Stream',
+    'menu.streamLog' => 'Stream Log',
     'Active' => 'Aktiv',
     'Code' => 'Code',
     'Config' => 'Konfiguration',
@@ -56,5 +57,6 @@ return [
     'Users' => 'Benutzer',
     'Value' => 'Wert',
     'Description before form' => 'Beschreibung vor Input',
-    'Frame URL' => 'URL für iFrame Anbindung'
+    'Frame URL' => 'URL für iFrame Anbindung',
+    'Client IP' => 'Benutzer IP'
 ];

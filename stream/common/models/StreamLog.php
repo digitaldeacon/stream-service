@@ -1,6 +1,6 @@
 <?php
 
-namespace backend\models;
+namespace common\models;
 
 use Yii;
 
@@ -32,7 +32,7 @@ class StreamLog extends \yii\db\ActiveRecord
         return [
             [['stream_id', 'value'], 'required'],
             [['stream_id'], 'integer'],
-            [['type', 'value'], 'string'],
+            [['type', 'value', 'clientip'], 'string'],
             [['timestamp'], 'safe'],
             [['stream_id'], 'exist', 'skipOnError' => true, 'targetClass' => Stream::className(), 'targetAttribute' => ['stream_id' => 'id']],
         ];
@@ -45,6 +45,7 @@ class StreamLog extends \yii\db\ActiveRecord
     {
         return [
             'stream_id' => Yii::t('backend', 'Stream ID'),
+            'clientip' => Yii::t('backend', 'Client IP'),
             'type' => Yii::t('backend', 'Type'),
             'value' => Yii::t('backend', 'Value'),
             'timestamp' => Yii::t('backend', 'Timestamp'),

@@ -3,7 +3,7 @@
 namespace backend\controllers;
 
 use Yii;
-use app\models\StreamLog;
+use common\models\StreamLog;
 use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -57,43 +57,6 @@ class StreamLogController extends Controller
         ]);
     }
 
-    /**
-     * Creates a new StreamLog model.
-     * If creation is successful, the browser will be redirected to the 'view' page.
-     * @return mixed
-     */
-    public function actionCreate()
-    {
-        $model = new StreamLog();
-
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'stream_id' => $model->stream_id, 'type' => $model->type]);
-        } else {
-            return $this->render('create', [
-                'model' => $model,
-            ]);
-        }
-    }
-
-    /**
-     * Updates an existing StreamLog model.
-     * If update is successful, the browser will be redirected to the 'view' page.
-     * @param integer $stream_id
-     * @param string $type
-     * @return mixed
-     */
-    public function actionUpdate($stream_id, $type)
-    {
-        $model = $this->findModel($stream_id, $type);
-
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'stream_id' => $model->stream_id, 'type' => $model->type]);
-        } else {
-            return $this->render('update', [
-                'model' => $model,
-            ]);
-        }
-    }
 
     /**
      * Deletes an existing StreamLog model.

@@ -1,8 +1,9 @@
 <?php
 
-namespace backend\models;
+namespace common\models;
 
 use Yii;
+use yii\base\Exception;
 
 /**
  * This is the model class for table "stream".
@@ -92,5 +93,25 @@ class Stream extends \yii\db\ActiveRecord
     public function getChildStreams()
     {
         return $this->hasMany(Stream::className(), ['parent' => 'id']);
+    }
+
+    public function logClient() {
+        if(!isset($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+            $client_ip = $_SERVER['REMOTE_ADDR'];
+        } else {
+            $client_ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+        }
+
+        try {
+            $log = new \common\models\StreamLog();
+            $log->stream_id = $this->id;
+            $log->type = 'login';
+            $log->value = implode(',',$_GET);
+            $log->clientip = $client_ip;
+            if(!$log->save()) {
+                var_dump($log->getErrors());
+            }
+        } catch(Exception $e) {}
+
     }
 }

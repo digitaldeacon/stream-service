@@ -41,6 +41,7 @@ AppAsset::register($this);
         $menuItems[] = ['label' => Yii::t('backend', 'menu.login'), 'url' => ['/site/login']];
     } else {
         $menuItems[] = ['label' => Yii::t('backend', 'menu.stream'), 'url' => ['/stream']];
+        $menuItems[] = ['label' => Yii::t('backend', 'menu.streamLog'), 'url' => ['/stream-log']];
         $menuItems[] = [
             'label' => 'Logout (' . Yii::$app->user->identity->username . ')',
             'url' => ['/site/logout'],
